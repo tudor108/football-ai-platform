@@ -40,5 +40,5 @@ jobs:
           workload_identity_provider: projects/205718552008/locations/global/workloadIdentityPools/github-pool/providers/github-provider
           service_account: github-actions-uploader@project-73d1e32a-8e68-4750-93c.iam.gserviceaccount.com
 
-      - name: Run extraction + upload pipeline
-        run: python -m extractdatafromapi.main
+      - name: Run full pipeline (extract + transform + derive + load BigQuery)
+        run: python run_all_local.py

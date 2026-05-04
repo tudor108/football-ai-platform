@@ -1,0 +1,853 @@
+﻿fixture_id,time_elapsed,time_extra,team_id,team_name,player_id,player_name,assist_id,assist_name,type,detail,comments,ingestion_date,source_file
+1208514,34,,547,Girona,2061,Bryan Gil,2182.0,V. Tsyhankov,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208514_events.json
+1208514,53,,547,Girona,2182,V. Tsyhankov,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208514_events.json
+1208514,56,,547,Girona,155,Abel Ruiz,2449.0,Y. Herrera,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208514_events.json
+1208514,58,,727,Osasuna,46662,Moncayola,46658.0,Rubén García,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208514_events.json
+1208514,58,,727,Osasuna,46746,A. Budimir,146751.0,Raúl García,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208514_events.json
+1208514,59,,727,Osasuna,67939,Aimar Oroz,139001.0,Pablo Ibáñez,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208514_events.json
+1208514,64,,547,Girona,2449,Y. Herrera,18949.0,Oriol Romeu,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208514_events.json
+1208514,64,,547,Girona,109564,B. Miovski,2617.0,C. Stuani,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208514_events.json
+1208514,68,,727,Osasuna,286639,Bryan Zaragoza,288800.0,Iker Benito,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208514_events.json
+1208514,74,,547,Girona,155,Abel Ruiz,281795.0,Y. Asprilla,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208514_events.json
+1208514,80,,547,Girona,2061,Bryan Gil,547.0,D. van de Beek,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208514_events.json
+1208514,81,,547,Girona,2182,V. Tsyhankov,47520.0,Portu,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208514_events.json
+1208514,85,,727,Osasuna,1825,Lucas Torró,46660.0,Javi Martínez,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208514_events.json
+1208514,90,,547,Girona,2617,C. Stuani,547.0,D. van de Beek,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208514_events.json
+1208516,5,,534,Las Palmas,182519,Alberto Moleiro,19337.0,O. McBurnie,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208516_events.json
+1208516,40,,541,Real Madrid,653,Ferland Mendy,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208516_events.json
+1208516,46,,541,Real Madrid,744,Brahim Díaz,10009.0,Rodrygo,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208516_events.json
+1208516,46,,541,Real Madrid,653,F. Mendy,736.0,Fran García,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208516_events.json
+1208516,61,,534,Las Palmas,182519,Alberto Moleiro,47111.0,Benito Ramírez,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208516_events.json
+1208516,64,,541,Real Madrid,754,L. Modrić,291964.0,A. Güler,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208516_events.json
+1208516,69,,541,Real Madrid,762,Vinícius Júnior,,,Goal,Penalty,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208516_events.json
+1208516,76,,541,Real Madrid,757,Lucas Vázquez,733.0,Dani Carvajal,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208516_events.json
+1208516,78,,534,Las Palmas,47324,Sandro Ramírez,46854.0,Viti Rozada,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208516_events.json
+1208516,78,,534,Las Palmas,19337,O. McBurnie,2671.0,Jaime Mata,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208516_events.json
+1208516,81,,534,Las Palmas,47464,José Campaña,21709.0,E. Loiodice,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208516_events.json
+1208516,81,,534,Las Palmas,70315,Kirian Rodríguez,122230.0,Manu Fuster,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208516_events.json
+1208516,86,,541,Real Madrid,762,Vinícius Júnior,377122.0,Endrick,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208516_events.json
+1208516,88,,541,Real Madrid,372,Éder Militão,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208516_events.json
+1208519,16,,548,Real Sociedad,182546,Jon Pacheco,,,Card,Yellow Card,Off the ball foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,28,,548,Real Sociedad,47323,Mikel Oyarzabal,,,Var,Card upgrade,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,29,,548,Real Sociedad,47323,Mikel Oyarzabal,,,Card,Red Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,33,,548,Real Sociedad,47440,Brais Méndez,23.0,Sergio Gómez,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,36,,548,Real Sociedad,47314,Igor Zubeldia,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,45,6.0,542,Alaves,104853,Asier Villalibre,,,Goal,Penalty,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,46,,548,Real Sociedad,182546,Jon Pacheco,405073.0,Jon Martín,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,46,,542,Alaves,6085,C. Benavídez,46740.0,Stoichkov,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,48,,542,Alaves,46740,Stoichkov,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,49,,542,Alaves,183751,Abderrahman Rebbach,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,63,,542,Alaves,104853,Asier Villalibre,47396.0,Kike García,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,63,,542,Alaves,70476,M. Diarra,64309.0,Manu Sánchez,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,66,,548,Real Sociedad,37938,S. Becker,31406.0,U. Sadiq,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,70,,542,Alaves,183751,A. Rebbach,47181.0,Toni Martínez,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,77,,542,Alaves,47181,Toni Martínez,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,81,,548,Real Sociedad,23,Sergio Gómez,182603.0,Jon Olasagasti,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,81,,548,Real Sociedad,47440,Brais Méndez,290106.0,Pablo Marín,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,81,,548,Real Sociedad,47314,Zubeldia,183744.0,Beñat Turrientes,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,90,7.0,548,Real Sociedad,405073,Jon Martin,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,90,7.0,548,Real Sociedad,32862,Takefusa Kubo,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,90,7.0,542,Alaves,64309,Manuel Sánchez,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,90,,542,Alaves,47353,Antonio Sivera,,,Card,Yellow Card,Time wasting,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208519,90,1.0,542,Alaves,187214,Carlos Vicente,162686.0,Antonio Blanco,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208519_events.json
+1208521,15,,531,Athletic Club,183799,Nico Williams,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208521_events.json
+1208521,34,,531,Athletic Club,47271,Yeray Álvarez,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208521_events.json
+1208521,35,,531,Athletic Club,128398,Oihan Sancet,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208521_events.json
+1208521,64,,531,Athletic Club,182617,Beñat Prados,47418.0,Mikel Vesga,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208521_events.json
+1208521,64,,531,Athletic Club,47291,Gorka Guruzeta,190489.0,Álvaro Djaló,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208521_events.json
+1208521,64,,531,Athletic Club,898,Ander Herrera,383780.0,Mikel Jauregizar,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208521_events.json
+1208521,70,,530,Atletico Madrid,6009,J. Alvarez,136117.0,Rodrigo Riquelme,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208521_events.json
+1208521,70,,530,Atletico Madrid,126936,Samuel Lino,8492.0,A. Sørloth,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208521_events.json
+1208521,70,,530,Atletico Madrid,67972,C. Gallagher,2472.0,R. De Paul,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208521_events.json
+1208521,71,,531,Athletic Club,47294,I. Williams,30510.0,Álex Berenguer,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208521_events.json
+1208521,81,,531,Athletic Club,128398,Oihan Sancet,332308.0,Unai Gómez,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208521_events.json
+1208521,83,,530,Atletico Madrid,56,A. Griezmann,323935.0,G. Simeone,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208521_events.json
+1208521,85,,530,Atletico Madrid,50,Koke,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208521_events.json
+1208521,88,,530,Atletico Madrid,50,Koke,53.0,Á. Correa,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208521_events.json
+1208521,90,2.0,530,Atletico Madrid,53,Á. Correa,8492.0,A. Sørloth,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208521_events.json
+1208522,20,,529,Barcelona,1496,Raphinha,396623.0,Pau Cubarsí,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,24,,529,Barcelona,521,R. Lewandowski,386828.0,Lamine Yamal,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,45,,720,Valladolid,740,Javi Sánchez,,,Card,Yellow Card,Handball,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,45,2.0,529,Barcelona,1257,J. Koundé,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,56,,720,Valladolid,122233,Marcos André,162028.0,Juanmi Latasa,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,57,,720,Valladolid,8587,S. Amallah,331004.0,Chuky,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,61,,529,Barcelona,396623,Pau Cubarsí,396624.0,Sergi Domínguez,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,61,,529,Barcelona,329728,Marc Casadó,619.0,Eric García,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,61,,529,Barcelona,133609,Pedri,340626.0,Fermín López,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,62,,720,Valladolid,46979,Iván Sánchez,343205.0,Mario Martín,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,64,,529,Barcelona,1496,Raphinha,521.0,R. Lewandowski,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,72,,529,Barcelona,1496,Raphinha,386828.0,Lamine Yamal,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,73,,529,Barcelona,521,R. Lewandowski,931.0,Ferran Torres,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,74,,720,Valladolid,107153,Kike Pérez,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,82,,529,Barcelona,1323,Dani Olmo,931.0,Ferran Torres,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,83,,529,Barcelona,1323,Dani Olmo,285909.0,Pablo Torre,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,84,,720,Valladolid,343205,Mario Martin,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,85,,529,Barcelona,931,Ferran Torres,1496.0,Raphinha,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,88,,720,Valladolid,107153,Kike Pérez,72048.0,C. Özkacar,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208522,88,,720,Valladolid,264470,Raúl Moro,181463.0,Víctor Meseguer,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208522_events.json
+1208523,22,,546,Getafe,119742,Juan Iglesias,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208523_events.json
+1208523,27,,548,Real Sociedad,47440,Brais Méndez,47317.0,Barrenetxea,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208523_events.json
+1208523,46,,548,Real Sociedad,47314,Zubeldia,405073.0,Jon Martín,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208523_events.json
+1208523,59,,548,Real Sociedad,199044,J. Aramburu,182636.0,Javi López,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208523_events.json
+1208523,60,,548,Real Sociedad,32862,T. Kubo,37938.0,S. Becker,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208523_events.json
+1208523,66,,548,Real Sociedad,2202,H. Traoré,47303.0,Aihen Muñoz,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208523_events.json
+1208523,66,,548,Real Sociedad,31406,U. Sadiq,61774.0,O. Óskarsson,subst,Substitution 6,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208523_events.json
+1208523,67,,546,Getafe,67955,Carles Pérez,47258.0,M. Arambarri,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208523_events.json
+1208523,67,,546,Getafe,325415,N. Aberdin,143.0,Carles Aleñá,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208523_events.json
+1208523,78,,546,Getafe,68483,B. Yıldırım,270516.0,P. González,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208523_events.json
+1208523,85,,546,Getafe,47306,Álex Sola,293297.0,J. Patrick,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208523_events.json
+1208523,90,4.0,548,Real Sociedad,47303,Aihen Muñoz,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208523_events.json
+1208523,90,,546,Getafe,403554,C. Uche,364415.0,Yellu Santiago,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208523_events.json
+1208524,24,,532,Valencia,47264,Hugo Duro,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208524_events.json
+1208524,39,,532,Valencia,47264,Hugo Duro,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208524_events.json
+1208524,42,,533,Villarreal,184226,Yéremy Pino,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208524_events.json
+1208524,45,4.0,533,Villarreal,18906,Ayoze Pérez,47541.0,Santi Comesaña,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208524_events.json
+1208524,46,,533,Villarreal,928,Dani Parejo,290740.0,I. Akhomach,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208524_events.json
+1208524,50,,533,Villarreal,20696,Pape Gueye,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208524_events.json
+1208524,51,,532,Valencia,47463,Pepelu,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208524_events.json
+1208524,62,,532,Valencia,919,Hugo Guillamón,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208524_events.json
+1208524,68,,533,Villarreal,20696,Pape Gueye,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208524_events.json
+1208524,68,,533,Villarreal,20696,Pape Gueye,,,Card,Red Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208524_events.json
+1208524,69,,532,Valencia,162175,Jesús Vázquez,47251.0,D. Foulquier,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208524_events.json
+1208524,69,,532,Valencia,919,Hugo Guillamón,47013.0,Rafa Mir,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208524_events.json
+1208524,69,,533,Villarreal,184226,Yeremy Pino,187987.0,Ramon Terrats,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208524_events.json
+1208524,77,,533,Villarreal,18794,Kiko Femenía,,,Card,Yellow Card,Time wasting,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208524_events.json
+1208524,77,,533,Villarreal,18906,Ayoze Pérez,258.0,Juan Bernat,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208524_events.json
+1208524,82,,532,Valencia,41157,André Almeida,315699.0,Javi Guerra,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208524_events.json
+1208524,82,,532,Valencia,46933,Luis Rioja,19352.0,Sergi Canós,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208524_events.json
+1208524,83,,533,Villarreal,314,Raúl Albiol,,,Card,Yellow Card,Time wasting,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208524_events.json
+1208525,8,,542,Alaves,187214,Carlos Vicente,46740.0,Stoichkov,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208525_events.json
+1208525,32,,542,Alaves,104821,Jon Guridi,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208525_events.json
+1208525,40,,542,Alaves,51241,Tomás Conechny,,,Var,Goal cancelled,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208525_events.json
+1208525,45,,542,Alaves,51241,Tomás Conechny,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208525_events.json
+1208525,46,,534,Las Palmas,122230,Manu Fuster,182519.0,Alberto Moleiro,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208525_events.json
+1208525,58,,534,Las Palmas,2671,Jaime Mata,47324.0,Sandro Ramírez,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208525_events.json
+1208525,58,,534,Las Palmas,46854,Viti Rozada,162026.0,Marvin Park,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208525_events.json
+1208525,64,,542,Alaves,51241,T. Conechny,324750.0,Carlos Martín,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208525_events.json
+1208525,64,,542,Alaves,47396,Kike García,47181.0,Toni Martínez,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208525_events.json
+1208525,64,,534,Las Palmas,47464,José Campaña,21709.0,E. Loiodice,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208525_events.json
+1208525,70,,542,Alaves,46740,Stoichkov,47309.0,Ander Guevara,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208525_events.json
+1208525,77,,534,Las Palmas,70315,Kirian Rodríguez,47393.0,Marc Cardona,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208525_events.json
+1208525,78,,542,Alaves,47181,Toni Martínez,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208525_events.json
+1208525,82,,542,Alaves,187214,Carlos Vicente,263812.0,L. Romero,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208525_events.json
+1208525,82,,542,Alaves,104821,Jon Guridi,162170.0,Hugo Novoa,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208525_events.json
+1208525,83,,542,Alaves,46813,Abdelkabir Abqar,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208525_events.json
+1208525,90,4.0,542,Alaves,263812,Luka Romero,,,Goal,Missed Penalty,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208525_events.json
+1208526,33,,798,Mallorca,26302,Pablo Maffeo,107194.0,Antonio Sánchez,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208526_events.json
+1208526,43,,798,Mallorca,46742,Dani Rodríguez,50048.0,V. Muriqi,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208526_events.json
+1208526,46,,537,Leganes,1708,Dani Raba,185202.0,Juan Cruz,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208526_events.json
+1208526,46,,537,Leganes,2060,M. El Haddadi,129657.0,Enric Franquesa,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208526_events.json
+1208526,46,,537,Leganes,2433,R. Tapia,41976.0,Y. Neyou,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208526_events.json
+1208526,57,,537,Leganes,162122,Adrià Alti,21701.0,V. Rosier,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208526_events.json
+1208526,57,,537,Leganes,47416,Óscar Rodríguez,302051.0,S. Cissé,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208526_events.json
+1208526,62,,798,Mallorca,482473,Marc Domenech,84086.0,Robert Navarro,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208526_events.json
+1208526,67,,537,Leganes,46849,Javi Hernández,47494.0,Miguel de la Fuente,subst,Substitution 6,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208526_events.json
+1208526,72,,798,Mallorca,25375,T. Asano,47336.0,Darder,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208526_events.json
+1208526,72,,798,Mallorca,920,Toni Lato,64268.0,J. Mojica,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208526_events.json
+1208526,77,,798,Mallorca,1701,Manu Morlanes,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208526_events.json
+1208526,84,,798,Mallorca,46742,Dani Rodríguez,181582.0,Copete,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208526_events.json
+1208526,84,,798,Mallorca,1701,Manu Morlanes,414.0,Omar Mascarell,subst,Substitution 6,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208526_events.json
+1208526,85,,798,Mallorca,414,Omar Mascarell,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208526_events.json
+1208526,89,,537,Leganes,41976,Yvan Neyou,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208526_events.json
+1208526,90,2.0,798,Mallorca,84086,Robert Navarro,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208526_events.json
+1208527,57,,543,Real Betis,1580,William Carvalho,133185.0,J. Cardoso,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208527_events.json
+1208527,57,,543,Real Betis,47119,Aitor Ruibal,340279.0,Vitor Roque,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208527_events.json
+1208527,59,,541,Real Madrid,762,Vinícius Júnior,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208527_events.json
+1208527,65,,541,Real Madrid,733,Daniel Carvajal,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208527_events.json
+1208527,65,,541,Real Madrid,748,Dani Ceballos,744.0,Brahim Díaz,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208527_events.json
+1208527,65,,541,Real Madrid,653,F. Mendy,736.0,Fran García,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208527_events.json
+1208527,67,,541,Real Madrid,278,K. Mbappé,756.0,F. Valverde,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208527_events.json
+1208527,72,,543,Real Betis,185477,Rodri,400948.0,Assane Diao,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208527_events.json
+1208527,74,,541,Real Madrid,762,Vinícius Júnior,,,Var,Penalty confirmed,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208527_events.json
+1208527,76,,541,Real Madrid,278,K. Mbappé,,,Goal,Penalty,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208527_events.json
+1208527,83,,543,Real Betis,1697,Pablo Fornals,128985.0,Iker Losada,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208527_events.json
+1208527,83,,543,Real Betis,181421,A. Ezzalzouli,47320.0,Juanmi,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208527_events.json
+1208527,84,,541,Real Madrid,278,K. Mbappé,754.0,L. Modrić,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208527_events.json
+1208527,89,,541,Real Madrid,10009,Rodrygo,377122.0,Endrick,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208527_events.json
+1208528,21,,727,Osasuna,279822,E. Boyomo,46746.0,A. Budimir,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208528_events.json
+1208528,29,,538,Celta Vigo,47348,Borja Iglesias,162712.0,Óscar Mingueza,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208528_events.json
+1208528,45,,727,Osasuna,286559,Carlos Domínguez,,,Goal,Own Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208528_events.json
+1208528,46,,538,Celta Vigo,269163,W. Swedberg,119213.0,Alfon González,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208528_events.json
+1208528,46,,538,Celta Vigo,286559,Carlos Domínguez,47988.0,C. Starfelt,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208528_events.json
+1208528,46,,538,Celta Vigo,47435,Fran Beltrán,286796.0,Damián Rodríguez,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208528_events.json
+1208528,62,,727,Osasuna,181259,Abel Bretones,286639.0,Bryan Zaragoza,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208528_events.json
+1208528,63,,727,Osasuna,286639,Bryan Zaragoza,47391.0,Rubén Peña,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208528_events.json
+1208528,64,,538,Celta Vigo,47348,Borja Iglesias,26845.0,T. Douvikas,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208528_events.json
+1208528,66,,727,Osasuna,1825,Lucas Torró,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208528_events.json
+1208528,74,,727,Osasuna,46658,Rubén García,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208528_events.json
+1208528,76,,538,Celta Vigo,162123,I. Moriba,313651.0,Hugo Sotelo,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208528_events.json
+1208528,77,,727,Osasuna,46746,A. Budimir,146751.0,Raúl García,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208528_events.json
+1208528,77,,727,Osasuna,46658,Rubén García,288800.0,Iker Benito,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208528_events.json
+1208528,86,,538,Celta Vigo,119213,Alfon González,,,Card,Red Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208528_events.json
+1208528,88,,727,Osasuna,46662,Moncayola,139001.0,Pablo Ibáñez,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208528_events.json
+1208528,88,,727,Osasuna,67939,Aimar Oroz,47574.0,Moi Gómez,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208528_events.json
+1208528,90,1.0,538,Celta Vigo,47574,Moi Gómez,,,Goal,Own Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208528_events.json
+1208529,41,,547,Girona,1700,Iván Martín,162032.0,Miguel Gutiérrez,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208529_events.json
+1208529,46,,547,Girona,2182,V. Tsyhankov,83.0,A. Danjuma,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208529_events.json
+1208529,46,,547,Girona,2449,Y. Herrera,306727.0,J. Solís,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208529_events.json
+1208529,47,,536,Sevilla,1427,Albert Sambi Lokonga,,,Card,Yellow Card,Off the ball foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208529_events.json
+1208529,58,,547,Girona,1700,Iván Martín,281795.0,Y. Asprilla,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208529_events.json
+1208529,63,,547,Girona,281795,Yáser Asprilla,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208529_events.json
+1208529,65,,536,Sevilla,25458,D. Lukébakio,2054.0,Jesús Navas,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208529_events.json
+1208529,65,,536,Sevilla,182772,Juanlu Sánchez,162126.0,Peque Fernández,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208529_events.json
+1208529,67,,536,Sevilla,174918,Loïc Badé,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208529_events.json
+1208529,70,,547,Girona,162434,Alejandro Francés,,,Var,Penalty confirmed,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208529_events.json
+1208529,73,,547,Girona,155,Abel Ruiz,,,Goal,Penalty,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208529_events.json
+1208529,76,,547,Girona,162434,Alejandro Francés,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208529_events.json
+1208529,82,,536,Sevilla,195923,José Ángel Carmona,340152.0,S. Idumbo,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208529_events.json
+1208529,82,,536,Sevilla,21004,L. Agoumé,957.0,D. Sow,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208529_events.json
+1208529,89,,547,Girona,162434,Alejandro Francés,283668.0,Arnau Martínez,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208529_events.json
+1208529,89,,547,Girona,2061,Bryan Gil,47520.0,Portu,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208529_events.json
+1208529,90,4.0,536,Sevilla,185398,Isaac Romero,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208529_events.json
+1208530,10,,532,Valencia,333672,César Tárrega,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208530_events.json
+1208530,25,,530,Atletico Madrid,50,Koke,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208530_events.json
+1208530,32,,532,Valencia,919,Hugo Guillamón,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208530_events.json
+1208530,39,,530,Atletico Madrid,67972,C. Gallagher,2472.0,R. De Paul,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208530_events.json
+1208530,46,,532,Valencia,919,Hugo Guillamón,158378.0,E. Barrenechea,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208530_events.json
+1208530,54,,530,Atletico Madrid,56,A. Griezmann,126936.0,Samuel Lino,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208530_events.json
+1208530,61,,530,Atletico Madrid,8492,A. Sørloth,6009.0,J. Alvarez,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208530_events.json
+1208530,61,,530,Atletico Madrid,2472,R. De Paul,53.0,Á. Correa,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208530_events.json
+1208530,67,,530,Atletico Madrid,126936,Samuel Lino,136117.0,Rodrigo Riquelme,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208530_events.json
+1208530,70,,532,Valencia,46933,Luis Rioja,19352.0,Sergi Canós,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208530_events.json
+1208530,71,,532,Valencia,47251,D. Foulquier,162175.0,Jesús Vázquez,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208530_events.json
+1208530,76,,530,Atletico Madrid,56,A. Griezmann,323935.0,G. Simeone,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208530_events.json
+1208530,77,,530,Atletico Madrid,2280,César Azpilicueta,22225.0,Reinildo,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208530_events.json
+1208530,79,,532,Valencia,119232,Dani Gómez,348326.0,Martín Tejón,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208530_events.json
+1208530,79,,532,Valencia,315699,Javi Guerra,161963.0,Germán Valera,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208530_events.json
+1208530,90,4.0,530,Atletico Madrid,6009,J. Alvarez,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208530_events.json
+1208531,-5,,543,Real Betis,18812,Adrián,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208531_events.json
+1208531,11,,537,Leganes,185202,Juan Cruz,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208531_events.json
+1208531,26,,543,Real Betis,1580,William Carvalho,286084.0,Sergi Altimira,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208531_events.json
+1208531,37,,537,Leganes,21701,Valentin Rosier,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208531_events.json
+1208531,46,,537,Leganes,185202,Juan Cruz,162122.0,Adrià Alti,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208531_events.json
+1208531,46,,537,Leganes,47080,Jorge Sáenz,403.0,M. Nastasić,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208531_events.json
+1208531,61,,543,Real Betis,47579,E. Ávila,1578.0,G. Lo Celso,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208531_events.json
+1208531,61,,537,Leganes,47416,Óscar Rodríguez,302051.0,S. Cissé,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208531_events.json
+1208531,61,,537,Leganes,129657,Enric Franquesa,2433.0,R. Tapia,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208531_events.json
+1208531,62,,543,Real Betis,400948,Assane Diao,340279.0,Vitor Roque,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208531_events.json
+1208531,62,,543,Real Betis,1264,Y. Sabaly,1439.0,Héctor Bellerín,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208531_events.json
+1208531,66,,537,Leganes,41976,Y. Neyou,5974.0,J. Chicco,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208531_events.json
+1208531,74,,543,Real Betis,181421,A. Ezzalzouli,1439.0,Héctor Bellerín,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208531_events.json
+1208531,86,,543,Real Betis,340279,Vitor Roque,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208531_events.json
+1208531,87,,543,Real Betis,1697,Pablo Fornals,47119.0,Aitor Ruibal,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208531_events.json
+1208532,22,,538,Celta Vigo,329720,Hugo Álvarez,320517.0,Pablo Durán,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,35,,538,Celta Vigo,47348,Borja Iglesias,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,40,,720,Valladolid,56283,Lucas Rosa,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,41,,538,Celta Vigo,329720,Hugo Álvarez,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,45,2.0,720,Valladolid,331004,Ivan Cantalejo,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,46,,720,Valladolid,104793,A. Ndiaye,264470.0,Raúl Moro,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,46,,720,Valladolid,331004,Chuky,46979.0,Iván Sánchez,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,46,,720,Valladolid,107153,Kike Pérez,181463.0,Víctor Meseguer,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,50,,720,Valladolid,264470,Raúl Moro,8587.0,S. Amallah,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,55,,720,Valladolid,8587,Selim Amallah,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,61,,538,Celta Vigo,313651,Hugo Sotelo,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,64,,720,Valladolid,48372,E. Cömert,14341.0,S. Jurić,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,68,,538,Celta Vigo,384135,Javi Rodríguez,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,69,,538,Celta Vigo,47348,Borja Iglesias,26845.0,T. Douvikas,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,69,,538,Celta Vigo,313651,Hugo Sotelo,286796.0,Damián Rodríguez,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,75,,538,Celta Vigo,1364,Jailson,2278.0,Marcos Alonso,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,76,,538,Celta Vigo,320517,Pablo Durán,269163.0,W. Swedberg,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,81,,720,Valladolid,343205,Mario Martin,,,Card,Red Card,Violent conduct,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,84,,720,Valladolid,14341,Stanko Jurić,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,85,,720,Valladolid,8587,S. Amallah,18902.0,Kenedy,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,86,,538,Celta Vigo,384135,Javi Rodríguez,,,Var,Goal cancelled,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,87,,720,Valladolid,162028,Juanmi Latasa,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,89,,538,Celta Vigo,384135,Javi Rodríguez,1926.0,J. Aidoo,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208532,90,1.0,538,Celta Vigo,26845,T. Douvikas,47445.0,Iago Aspas,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208532_events.json
+1208533,25,,798,Mallorca,190485,Samuel Costa,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208533,27,,533,Villarreal,21997,Logan Costa,182219.0,Álex Baena,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208533,33,,533,Villarreal,70500,Sergi Cardona,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208533,37,,798,Mallorca,46738,Martin Valjent,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208533,46,,798,Mallorca,482473,Marc Domenech,47514.0,Valery,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208533,47,,533,Villarreal,343684,Thierno Barry,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208533,57,,798,Mallorca,314,Raúl Albiol,,,Goal,Own Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208533,62,,798,Mallorca,46742,Dani Rodríguez,84086.0,Robert Navarro,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208533,63,,798,Mallorca,25375,T. Asano,47336.0,Darder,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208533,64,,533,Villarreal,290740,I. Akhomach,184226.0,Yeremy Pino,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208533,69,,798,Mallorca,920,Toni Lato,,,Card,Red Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208533,72,,798,Mallorca,1701,Manu Morlanes,64268.0,J. Mojica,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208533,74,,533,Villarreal,928,Dani Parejo,3246.0,N. Pépé,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208533,81,,798,Mallorca,107194,Antonio Sánchez,181582.0,Copete,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208533,83,,533,Villarreal,47541,Santi Comesaña,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208533,85,,533,Villarreal,47541,Santi Comesaña,187987.0,Ramon Terrats,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208533,86,,533,Villarreal,70500,Sergi Cardona,258.0,Juan Bernat,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208533,90,4.0,798,Mallorca,47514,Valery Fernández,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208533,90,4.0,533,Villarreal,18906,Ayoze Pérez,184226.0,Yeremy Pino,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208533_events.json
+1208534,7,,531,Athletic Club,128398,Oihan Sancet,47294.0,I. Williams,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208534,22,,531,Athletic Club,383780,Mikel Jauregizar,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208534,27,,534,Las Palmas,131535,Alex Suárez,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208534,30,,531,Athletic Club,183799,Nico Williams,47294.0,I. Williams,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208534,45,2.0,531,Athletic Club,47007,Iñigo Ruiz de Galarreta,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208534,46,,534,Las Palmas,47464,José Campaña,47004.0,Fabio González,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208534,46,,534,Las Palmas,131535,Álex Suárez,47052.0,Álex Muñoz,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208534,56,,531,Athletic Club,383780,Mikel Jauregizar,,,Card,Red Card,Professional foul last man,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208534,58,,534,Las Palmas,47324,Sandro Ramírez,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208534,59,,531,Athletic Club,47007,Ruíz de Galarreta,182617.0,Beñat Prados,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208534,59,,531,Athletic Club,47291,Gorka Guruzeta,47418.0,Mikel Vesga,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208534,63,,534,Las Palmas,46860,Javi Muñoz,129791.0,Fábio Silva,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208534,71,,531,Athletic Club,128398,Oihan Sancet,332308.0,Unai Gómez,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208534,71,,531,Athletic Club,183799,Nico Williams,30510.0,Álex Berenguer,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208534,76,,531,Athletic Club,183849,Aitor Paredes,47294.0,I. Williams,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208534,77,,534,Las Palmas,19337,O. McBurnie,2671.0,Jaime Mata,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208534,77,,534,Las Palmas,44811,S. McKenna,47111.0,Benito Ramírez,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208534,77,,531,Athletic Club,47275,De Marcos,47299.0,Andoni Gorosabel,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208534,83,,534,Las Palmas,47052,Álex Muñoz,70315.0,Kirian Rodríguez,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208534_events.json
+1208535,30,,529,Barcelona,386828,Lamine Yamal,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,36,,547,Girona,2061,Bryan Gil,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,37,,529,Barcelona,386828,Lamine Yamal,521.0,R. Lewandowski,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,45,1.0,547,Girona,2061,Bryan Gil,,,Var,Penalty cancelled,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,47,,529,Barcelona,1323,Dani Olmo,1257.0,J. Koundé,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,54,,547,Girona,2061,Bryan Gil,281795.0,Y. Asprilla,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,55,,547,Girona,83,A. Danjuma,47520.0,Portu,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,61,,529,Barcelona,396623,Pau Cubarsí,386859.0,Héctor Fort,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,61,,529,Barcelona,1323,Dani Olmo,619.0,Eric García,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,64,,529,Barcelona,133609,Pedri,329728.0,Marc Casadó,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,69,,547,Girona,155,Abel Ruiz,2617.0,C. Stuani,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,69,,547,Girona,2182,V. Tsyhankov,547.0,D. van de Beek,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,69,,529,Barcelona,133609,Pedri,263530.0,Pau Víctor,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,69,,529,Barcelona,521,R. Lewandowski,931.0,Ferran Torres,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,80,,547,Girona,2617,C. Stuani,47520.0,Portu,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,84,,529,Barcelona,263530,Pau Víctor,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,85,,547,Girona,162434,Alejandro Francés,283668.0,Arnau Martínez,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,86,,529,Barcelona,931,Ferran Torres,,,Card,Red Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,90,6.0,547,Girona,2617,Cristhian Stuani,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,90,1.0,547,Girona,47520,Portu,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,90,1.0,529,Barcelona,386828,Lamine Yamal,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208535,90,1.0,529,Barcelona,386828,Lamine Yamal,181701.0,Gerard Martín,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208535_events.json
+1208536,-5,,546,Getafe,47306,Álex Sola,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,23,,536,Sevilla,2054,Jesús Navas,47329.0,Adrià Pedrosa,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,45,1.0,546,Getafe,68483,Bertuğ Özgür Yıldırım,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,56,,536,Sevilla,185398,Isaac Romero,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,63,,546,Getafe,47250,Djené,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,67,,536,Sevilla,39121,C. Ejuke,25458.0,D. Lukébakio,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,67,,536,Sevilla,2054,Jesús Navas,182772.0,Juanlu Sánchez,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,71,,546,Getafe,67955,Carles Pérez,333373.0,Gorka Rivera,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,71,,546,Getafe,47258,M. Arambarri,143.0,Carles Aleñá,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,71,,546,Getafe,47306,Álex Sola,270516.0,P. González,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,76,,536,Sevilla,162126,Peque Fernández,21004.0,L. Agoumé,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,80,,536,Sevilla,433,Marcão,297311.0,Kike Salas,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,83,,536,Sevilla,182772,Juanlu Sánchez,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,84,,546,Getafe,403554,C. Uche,364415.0,Yellu Santiago,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,84,,546,Getafe,18867,Diego Rico,465838.0,Alberto Risco,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,86,,536,Sevilla,182772,Juanlu Sánchez,,,Card,Yellow Card,Simulation,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,86,,536,Sevilla,182772,Juanlu Sánchez,,,Card,Red Card,Simulation,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,90,,546,Getafe,364415,Yellu Santiago,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,90,5.0,536,Sevilla,957,D. Sow,319572.0,V. Barco,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,90,5.0,536,Sevilla,185398,Isaac Romero,2468.0,G. Montiel,subst,Substitution 6,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208536,90,6.0,546,Getafe,2039,Juan Berrocal,293297.0,J. Patrick,subst,Substitution 6,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208536_events.json
+1208537,19,,727,Osasuna,286639,Bryan Zaragoza,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208537,27,,727,Osasuna,146751,Raúl García,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208537,42,,727,Osasuna,46662,Jon Moncayola,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208537,50,,728,Rayo Vallecano,15900,A. Mumin,47414.0,Gerard Gumbau,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208537,57,,728,Rayo Vallecano,47557,Ó. Trejo,128582.0,Jorge de Frutos,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208537,57,,728,Rayo Vallecano,47554,Adri Embarba,131546.0,Isi Palazón,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208537,59,,728,Rayo Vallecano,52,Sergio Camello,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208537,64,,728,Rayo Vallecano,47414,Gerard Gumbau,47285.0,Unai López,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208537,66,,727,Osasuna,67939,Aimar Oroz,139001.0,Pablo Ibáñez,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208537,66,,727,Osasuna,146751,Raúl García,46746.0,A. Budimir,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208537,66,,728,Rayo Vallecano,1703,A. Rațiu,181734.0,Pep Chavarría,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208537,76,,727,Osasuna,46662,Moncayola,47391.0,Rubén Peña,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208537,76,,727,Osasuna,46658,Rubén García,47419.0,José Arnáiz,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208537,78,,728,Rayo Vallecano,15900,Abdul Mumin,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208537,84,,727,Osasuna,286639,Bryan Zaragoza,47574.0,Moi Gómez,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208537,87,,728,Rayo Vallecano,52,Sergio Camello,47495.0,Sergi Guardiola,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208537,87,,728,Rayo Vallecano,47543,Álvaro García,517.0,J. Rodríguez,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208537,88,,728,Rayo Vallecano,47285,Unai López,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208537,90,5.0,728,Rayo Vallecano,47285,Unai López,18895.0,F. Lejeune,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208537_events.json
+1208538,17,,548,Real Sociedad,31406,Umar Sadiq,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208538_events.json
+1208538,24,,541,Real Madrid,744,Brahim Díaz,10009.0,Rodrygo,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208538_events.json
+1208538,28,,548,Real Sociedad,199044,Jon Aramburu,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208538_events.json
+1208538,58,,541,Real Madrid,762,Vinícius Júnior,,,Goal,Penalty,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208538_events.json
+1208538,63,,548,Real Sociedad,37938,S. Becker,47317.0,Barrenetxea,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208538_events.json
+1208538,63,,548,Real Sociedad,31406,U. Sadiq,61774.0,O. Óskarsson,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208538_events.json
+1208538,73,,541,Real Madrid,762,Vinícius Júnior,,,Var,Penalty confirmed,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208538_events.json
+1208538,75,,548,Real Sociedad,21694,N. Aguerd,182546.0,Jon Pacheco,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208538_events.json
+1208538,75,,548,Real Sociedad,7332,L. Sučić,183744.0,Beñat Turrientes,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208538_events.json
+1208538,75,,541,Real Madrid,278,K. Mbappé,,,Goal,Penalty,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208538_events.json
+1208538,77,,541,Real Madrid,291964,A. Güler,757.0,Lucas Vázquez,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208538_events.json
+1208538,78,,548,Real Sociedad,182636,Javi López,47303.0,Aihen Muñoz,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208538_events.json
+1208538,79,,541,Real Madrid,754,Luka Modrić,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208538_events.json
+1208538,82,,548,Real Sociedad,182546,Jon Pacheco,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208538_events.json
+1208538,83,,548,Real Sociedad,47317,Ander Barrenetxea,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208538_events.json
+1208538,90,,541,Real Madrid,278,K. Mbappé,377122.0,Endrick,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208538_events.json
+1208550,34,,798,Mallorca,190485,Samuel Costa,,,Var,Penalty confirmed,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208550_events.json
+1208550,36,,798,Mallorca,46751,Abdón Prats,,,Goal,Penalty,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208550_events.json
+1208550,46,,548,Real Sociedad,23,Sergio Gómez,32862.0,T. Kubo,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208550_events.json
+1208550,54,,548,Real Sociedad,183744,Beñat Turrientes,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208550_events.json
+1208550,60,,798,Mallorca,46751,Abdón Prats,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208550_events.json
+1208550,60,,548,Real Sociedad,47323,Mikel Oyarzabal,61774.0,O. Óskarsson,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208550_events.json
+1208550,60,,548,Real Sociedad,47298,Aritz Elustondo,737.0,Odriozola,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208550_events.json
+1208550,61,,548,Real Sociedad,183744,Beñat Turrientes,290106.0,Pablo Marín,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208550_events.json
+1208550,63,,798,Mallorca,2001,C. Larin,25375.0,T. Asano,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208550_events.json
+1208550,63,,798,Mallorca,46751,Abdón Prats,50048.0,V. Muriqi,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208550_events.json
+1208550,70,,798,Mallorca,84086,Robert Navarro,46742.0,Dani Rodríguez,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208550_events.json
+1208550,78,,548,Real Sociedad,47317,Barrenetxea,37938.0,S. Becker,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208550_events.json
+1208550,88,,798,Mallorca,47336,Darder,47514.0,Valery,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208550_events.json
+1208550,88,,798,Mallorca,190485,Samú Costa,1701.0,Manu Morlanes,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1208550_events.json
+1212912,46,,530,Atletico Madrid,126936,Samuel Lino,336594.0,Pablo Barrios,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212912_events.json
+1212912,46,,530,Atletico Madrid,6009,J. Alvarez,56.0,A. Griezmann,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212912_events.json
+1212912,46,,530,Atletico Madrid,6503,N. Molina,753.0,Marcos Llorente,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212912_events.json
+1212912,55,,540,Espanyol,47349,Javi Puado,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212912_events.json
+1212912,57,,530,Atletico Madrid,136117,Rodrigo Riquelme,,,Var,Goal cancelled,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212912_events.json
+1212912,62,,530,Atletico Madrid,2472,R. De Paul,53.0,Á. Correa,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212912_events.json
+1212912,64,,540,Espanyol,311344,A. Véliz,128478.0,W. Cheddira,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212912_events.json
+1212912,64,,540,Espanyol,184420,Carlos Romero,46764.0,Brian Oliván,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212912_events.json
+1212912,65,,540,Espanyol,30924,M. Kumbulla,2042.0,Sergi Gómez,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212912_events.json
+1212912,66,,540,Espanyol,67940,José Gragera,127426.0,Pol Lozano,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212912_events.json
+1212912,73,,530,Atletico Madrid,8492,A. Sørloth,22225.0,Reinildo,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212912_events.json
+1212912,82,,540,Espanyol,286601,Omar El Hilali,,,Card,Yellow Card,Time wasting,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212912_events.json
+1212912,87,,540,Espanyol,47195,Álvaro Aguado,182674.0,Jofre Carreras,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212912_events.json
+1212913,-5,,728,Rayo Vallecano,47543,Álvaro García,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212913_events.json
+1212913,4,,728,Rayo Vallecano,47543,Álvaro García,47554.0,Adri Embarba,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212913_events.json
+1212913,8,,540,Espanyol,184420,Carlos Romero,182674.0,Jofre Carreras,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212913_events.json
+1212913,35,,728,Rayo Vallecano,46759,A. Espino,181734.0,Pep Chavarría,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212913_events.json
+1212913,46,,540,Espanyol,46764,Brian Oliván,8683.0,I. Cardona,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212913_events.json
+1212913,46,,540,Espanyol,67940,José Gragera,47195.0,Álvaro Aguado,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212913_events.json
+1212913,62,,728,Rayo Vallecano,52,Sergio Camello,20520.0,I. Balliu,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212913_events.json
+1212913,63,,728,Rayo Vallecano,128582,Jorge de Frutos,131546.0,Isi Palazón,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212913_events.json
+1212913,65,,540,Espanyol,182674,Jofre Carreras,46709.0,Álvaro Tejero,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212913_events.json
+1212913,71,,540,Espanyol,47349,Javi Puado,128478.0,W. Cheddira,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212913_events.json
+1212913,72,,728,Rayo Vallecano,47543,Álvaro García,122657.0,Randy Nteka,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212913_events.json
+1212913,73,,728,Rayo Vallecano,47285,Unai López,41552.0,P. Ciss,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212913_events.json
+1212913,81,,540,Espanyol,30924,Marash Kumbulla,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212913_events.json
+1212913,85,,540,Espanyol,47195,Álvaro Aguado,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212913_events.json
+1212913,90,7.0,540,Espanyol,311344,Alejo Véliz,,,Card,Yellow Card,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212913_events.json
+1212913,90,3.0,728,Rayo Vallecano,15900,Abdul Mumin,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212913_events.json
+1212913,90,1.0,540,Espanyol,47478,Fernando Calero,2042.0,Sergi Gómez,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212913_events.json
+1212913,90,6.0,540,Espanyol,311344,A. Véliz,128478.0,W. Cheddira,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212913_events.json
+1212914,22,,540,Espanyol,47349,Javi Puado,46709.0,Álvaro Tejero,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,29,,542,Alaves,46813,Abdelkabir Abqar,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,35,,542,Alaves,51241,T. Conechny,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,48,,540,Espanyol,30924,Marash Kumbulla,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,54,,540,Espanyol,286601,Omar El Hilali,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,56,,540,Espanyol,47349,Javi Puado,46709.0,Álvaro Tejero,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,57,,540,Espanyol,311344,A. Véliz,128478.0,W. Cheddira,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,58,,540,Espanyol,46709,Álvaro Tejero,8683.0,I. Cardona,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,58,,540,Espanyol,47195,Álvaro Aguado,67940.0,José Gragera,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,61,,542,Alaves,47353,Antonio Sivera,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,63,,540,Espanyol,47349,Javi Puado,,,Goal,Penalty,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,64,,542,Alaves,47396,Kike García,47309.0,Ander Guevara,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,64,,542,Alaves,46813,A. Abqar,47181.0,Toni Martínez,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,64,,542,Alaves,162686,Antonio Blanco,311773.0,S. Mouriño,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,64,,542,Alaves,104821,Jon Guridi,47389.0,Joan Jordán,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,68,,542,Alaves,6233,N. Tenaglia,47389.0,Joan Jordán,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,74,,540,Espanyol,182674,Jofre Carreras,2042.0,Sergi Gómez,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,76,,542,Alaves,64309,Manuel Sánchez,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,78,,542,Alaves,51241,T. Conechny,104853.0,Asier Villalibre,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1212914,85,,540,Espanyol,184420,Carlos Romero,46764.0,Brian Oliván,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-29/fixture_1212914_events.json
+1208494,27,,531,Athletic Club,128398,Oihan Sancet,47291.0,Gorka Guruzeta,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208494_events.json
+1208494,40,,546,Getafe,47258,M. Arambarri,143.0,Carles Aleñá,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208494_events.json
+1208494,45,8.0,546,Getafe,403554,Christantus Uche,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208494_events.json
+1208494,46,,546,Getafe,67955,Carles Pérez,270516.0,P. González,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208494_events.json
+1208494,55,,531,Athletic Club,182617,Beñat Prados,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208494_events.json
+1208494,57,,531,Athletic Club,182617,Beñat Prados,898.0,Ander Herrera,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208494_events.json
+1208494,57,,531,Athletic Club,47418,Mikel Vesga,332308.0,Unai Gómez,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208494_events.json
+1208494,64,,546,Getafe,403554,C. Uche,47085.0,Luis Milla,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208494_events.json
+1208494,70,,531,Athletic Club,332308,Unai Gómez,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208494_events.json
+1208494,72,,531,Athletic Club,30510,Álex Berenguer,183799.0,Nico Williams,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208494_events.json
+1208494,73,,531,Athletic Club,47299,Andoni Gorosabel,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208494_events.json
+1208494,79,,546,Getafe,47306,Álex Sola,364415.0,Yellu Santiago,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208494_events.json
+1208494,81,,531,Athletic Club,47299,Andoni Gorosabel,47276.0,Lekue,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208494_events.json
+1208494,81,,531,Athletic Club,183849,Aitor Paredes,47278.0,Dani Vivian,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208494_events.json
+1208494,86,,531,Athletic Club,898,Ander Herrera,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208494_events.json
+1208495,-5,,543,Real Betis,47119,Aitor Ruibal,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208495_events.json
+1208495,6,,543,Real Betis,1561,Marc Bartra,668.0,N. Fekir,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208495_events.json
+1208495,59,,543,Real Betis,1697,Pablo Fornals,185477.0,Rodri,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208495_events.json
+1208495,59,,543,Real Betis,47320,Juanmi,181421.0,A. Ezzalzouli,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208495_events.json
+1208495,66,,547,Girona,47520,Portu,389602.0,Iker Almena,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208495_events.json
+1208495,66,,547,Girona,18949,Oriol Romeu,306727.0,J. Solís,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208495_events.json
+1208495,70,,543,Real Betis,47119,Aitor Ruibal,47579.0,E. Ávila,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208495_events.json
+1208495,70,,547,Girona,2449,Y. Herrera,336674.0,G. Misehouy,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208495_events.json
+1208495,72,,547,Girona,336674,G. Misehouy,389602.0,Iker Almena,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208495_events.json
+1208495,77,,543,Real Betis,47341,Marc Roca,286084.0,Sergi Altimira,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208495_events.json
+1208495,77,,543,Real Betis,1580,William Carvalho,133185.0,J. Cardoso,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208495_events.json
+1208495,81,,547,Girona,155,Abel Ruiz,66407.0,L. Krejčí,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208495_events.json
+1208495,81,,547,Girona,2061,Bryan Gil,2617.0,C. Stuani,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208495_events.json
+1208495,83,,543,Real Betis,20600,Romain Perraud,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208495_events.json
+1208496,13,,541,Real Madrid,10009,Rodrygo,762.0,Vinícius Júnior,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208496_events.json
+1208496,45,3.0,798,Mallorca,26302,Pablo Maffeo,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208496_events.json
+1208496,53,,798,Mallorca,50048,V. Muriqi,46742.0,Dani Rodríguez,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208496_events.json
+1208496,63,,541,Real Madrid,1271,A. Tchouaméni,754.0,L. Modrić,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208496_events.json
+1208496,67,,798,Mallorca,46742,Dani Rodríguez,107194.0,Antonio Sánchez,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208496_events.json
+1208496,72,,798,Mallorca,47336,Darder,1701.0,Manu Morlanes,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208496_events.json
+1208496,72,,798,Mallorca,25375,T. Asano,2001.0,C. Larin,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208496_events.json
+1208496,88,,541,Real Madrid,762,Vinícius Júnior,744.0,Brahim Díaz,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208496_events.json
+1208496,88,,541,Real Madrid,129718,J. Bellingham,291964.0,A. Güler,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208496_events.json
+1208496,88,,541,Real Madrid,733,Dani Carvajal,757.0,Lucas Vázquez,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208496_events.json
+1208496,90,7.0,541,Real Madrid,653,Ferland Mendy,,,Card,Red Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208496_events.json
+1208496,90,3.0,798,Mallorca,414,Omar Mascarell,181582.0,Copete,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208496_events.json
+1208497,25,,536,Sevilla,131535,Álex Suárez,,,Goal,Own Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208497_events.json
+1208497,34,,536,Sevilla,182772,Juanlu Sánchez,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208497_events.json
+1208497,42,,534,Las Palmas,133110,T. Nianzou,,,Goal,Own Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208497_events.json
+1208497,61,,536,Sevilla,182772,Juanlu Sánchez,185398.0,Isaac Romero,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208497_events.json
+1208497,68,,534,Las Palmas,2671,Jaime Mata,47324.0,Sandro Ramírez,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208497_events.json
+1208497,69,,534,Las Palmas,47052,Álex Muñoz,44811.0,S. McKenna,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208497_events.json
+1208497,69,,534,Las Palmas,21709,E. Loiodice,122230.0,Manu Fuster,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208497_events.json
+1208497,71,,534,Las Palmas,47324,Sandro Ramírez,46860.0,Javi Muñoz,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208497_events.json
+1208497,74,,536,Sevilla,25458,D. Lukébakio,2054.0,Jesús Navas,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208497_events.json
+1208497,76,,534,Las Palmas,162026,Marvin Park,46854.0,Viti Rozada,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208497_events.json
+1208497,80,,536,Sevilla,47329,Adrià Pedrosa,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208497_events.json
+1208497,81,,534,Las Palmas,46854,Viti Rozada,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208497_events.json
+1208497,83,,536,Sevilla,182772,Juanlu Sánchez,297311.0,Kike Salas,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208497_events.json
+1208497,83,,536,Sevilla,185398,Isaac Romero,162126.0,Peque Fernández,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208497_events.json
+1208497,87,,534,Las Palmas,182519,Alberto Moleiro,453885.0,A. Bassinga,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208497_events.json
+1208497,87,,534,Las Palmas,19337,O. McBurnie,47393.0,Marc Cardona,subst,Substitution 6,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208497_events.json
+1208497,90,7.0,534,Las Palmas,162475,Mika Mármol,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208497_events.json
+1208498,10,,533,Villarreal,184226,Yéremy Pino,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208498_events.json
+1208498,18,,533,Villarreal,83,A. Danjuma,122956.0,Diego Conde,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208498_events.json
+1208498,20,,530,Atletico Madrid,753,Marcos Llorente,56.0,A. Griezmann,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208498_events.json
+1208498,37,,533,Villarreal,50,Koke,,,Goal,Own Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208498_events.json
+1208498,40,,530,Atletico Madrid,47301,Robin Le Normand,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208498_events.json
+1208498,43,,530,Atletico Madrid,336594,Pablo Barrios,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208498_events.json
+1208498,45,5.0,530,Atletico Madrid,8492,A. Sørloth,336594.0,Pablo Barrios,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208498_events.json
+1208498,46,,530,Atletico Madrid,20,A. Witsel,31.0,J. Giménez,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208498_events.json
+1208498,46,,530,Atletico Madrid,8492,A. Sørloth,53.0,Á. Correa,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208498_events.json
+1208498,54,,530,Atletico Madrid,22225,Reinildo,6503.0,N. Molina,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208498_events.json
+1208498,64,,530,Atletico Madrid,50,Koke,2472.0,R. De Paul,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208498_events.json
+1208498,71,,533,Villarreal,184226,Yeremy Pino,290740.0,I. Akhomach,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208498_events.json
+1208498,71,,533,Villarreal,1707,Gerard Moreno,3246.0,N. Pépé,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208498_events.json
+1208498,71,,533,Villarreal,182219,Álex Baena,20696.0,P. Gueye,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208498_events.json
+1208498,78,,530,Atletico Madrid,56,A. Griezmann,6009.0,J. Alvarez,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208498_events.json
+1208498,79,,533,Villarreal,83,A. Danjuma,18906.0,Ayoze Pérez,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208498_events.json
+1208498,81,,530,Atletico Madrid,126936,Samuel Lino,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208498_events.json
+1208498,90,1.0,533,Villarreal,928,Dani Parejo,187987.0,Ramon Terrats,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208498_events.json
+1208499,38,,532,Valencia,47463,Pepelu,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208499,44,,532,Valencia,47264,Hugo Duro,,,Var,Goal confirmed,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208499,44,,532,Valencia,47264,Hugo Duro,162127.0,Diego López,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208499,45,5.0,532,Valencia,162175,Jesús Vázquez,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208499,45,2.0,529,Barcelona,396623,Pau Cubarsí,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208499,45,6.0,529,Barcelona,521,R. Lewandowski,386828.0,Lamine Yamal,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208499,49,,529,Barcelona,521,R. Lewandowski,,,Goal,Penalty,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208499,64,,529,Barcelona,931,Ferran Torres,133609.0,Pedri,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208499,64,,529,Barcelona,396623,Pau Cubarsí,2282.0,A. Christensen,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208499,64,,529,Barcelona,161928,Alejandro Balde,181701.0,Gerard Martín,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208499,66,,532,Valencia,162127,Diego López,47251.0,D. Foulquier,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208499,66,,532,Valencia,41157,André Almeida,119232.0,Dani Gómez,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208499,69,,529,Barcelona,2282,Andreas Christensen,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208499,71,,529,Barcelona,433396,Marc Bernal,619.0,Eric García,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208499,77,,532,Valencia,47013,Rafa Mir,439578.0,David Otorbi,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208499,78,,532,Valencia,162175,Jesús Vázquez,348326.0,Martín Tejón,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208499,81,,529,Barcelona,1257,Jules Koundé,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208499,86,,532,Valencia,315699,Javi Guerra,919.0,Hugo Guillamón,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208499,86,,529,Barcelona,386828,Lamine Yamal,263530.0,Pau Víctor,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208499_events.json
+1208500,27,,548,Real Sociedad,183699,Urko González,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208500,32,,728,Rayo Vallecano,47285,Unai López,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208500,46,,548,Real Sociedad,183699,Urko González,47315.0,Martín Zubimendi,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208500,46,,728,Rayo Vallecano,47285,Unai López,47414.0,Gerard Gumbau,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208500,53,,728,Rayo Vallecano,18895,Florian Lejeune,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208500,56,,728,Rayo Vallecano,122657,Randy Nteka,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208500,57,,728,Rayo Vallecano,47554,Adrián Embarba,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208500,63,,728,Rayo Vallecano,122657,Randy Nteka,52.0,Sergio Camello,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208500,67,,728,Rayo Vallecano,128582,Jorge de Frutos,15900.0,A. Mumin,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208500,68,,548,Real Sociedad,32862,T. Kubo,23.0,Sergio Gómez,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208500,68,,548,Real Sociedad,183744,Beñat Turrientes,47317.0,Barrenetxea,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208500,75,,548,Real Sociedad,2202,H. Traoré,199044.0,J. Aramburu,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208500,75,,728,Rayo Vallecano,128582,Jorge de Frutos,41552.0,P. Ciss,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208500,75,,728,Rayo Vallecano,47554,Adri Embarba,181734.0,Pep Chavarría,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208500,80,,728,Rayo Vallecano,1703,A. Rațiu,20520.0,I. Balliu,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208500,83,,548,Real Sociedad,47323,Mikel Oyarzabal,7332.0,L. Sučić,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208500,84,,728,Rayo Vallecano,52,Sergio Camello,41552.0,P. Ciss,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208500,90,4.0,548,Real Sociedad,199044,Jon Aramburu,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208500,90,8.0,548,Real Sociedad,47315,Martín Zubimendi,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208500_events.json
+1208501,8,,538,Celta Vigo,47445,Iago Aspas,,,Var,Red card cancelled,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208501,9,,538,Celta Vigo,47445,Iago Aspas,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208501,17,,542,Alaves,47396,Kike García,162686.0,Antonio Blanco,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208501,45,,538,Celta Vigo,47445,Iago Aspas,,,Var,Goal cancelled,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208501,45,2.0,542,Alaves,51241,Tomás Conechny,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208501,46,,538,Celta Vigo,47988,C. Starfelt,269163.0,W. Swedberg,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208501,46,,538,Celta Vigo,18896,Javier Manquillo,384135.0,Javi Rodríguez,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208501,46,,538,Celta Vigo,22235,J. Bamba,1364.0,Jailson,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208501,58,,542,Alaves,263812,L. Romero,162170.0,Hugo Novoa,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208501,65,,538,Celta Vigo,47435,Fran Beltrán,162123.0,I. Moriba,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208501,66,,538,Celta Vigo,269163,W. Swedberg,329720.0,Hugo Álvarez,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208501,68,,542,Alaves,51241,T. Conechny,46933.0,Luis Rioja,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208501,68,,542,Alaves,104821,Jon Guridi,46740.0,Stoichkov,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208501,78,,538,Celta Vigo,26845,T. Douvikas,47348.0,Borja Iglesias,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208501,80,,542,Alaves,47396,Kike García,104853.0,Asier Villalibre,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208501,80,,542,Alaves,47309,Ander Guevara,6085.0,C. Benavídez,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208501,84,,538,Celta Vigo,47445,Iago Aspas,269163.0,W. Swedberg,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208501,87,,538,Celta Vigo,286796,Damián Rodríguez,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208501,90,5.0,542,Alaves,46813,Abdelkabir Abqar,,,Card,Yellow Card,Persistent fouling,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208501_events.json
+1208502,22,,537,Leganes,185202,Juan Cruz,46849.0,Javi Hernández,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208502_events.json
+1208502,30,,537,Leganes,21701,Valentin Rosier,,,Card,Yellow Card,Time wasting,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208502_events.json
+1208502,46,,727,Osasuna,182621,Iker Muñoz,46662.0,Moncayola,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208502_events.json
+1208502,60,,727,Osasuna,181259,Abel Bretones,46967.0,Juan Cruz,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208502_events.json
+1208502,60,,727,Osasuna,47574,Moi Gómez,286639.0,Bryan Zaragoza,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208502_events.json
+1208502,61,,537,Leganes,2036,Juan Soriano,,,Card,Yellow Card,Time wasting,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208502_events.json
+1208502,63,,537,Leganes,185202,Juan Cruz,1708.0,Dani Raba,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208502_events.json
+1208502,73,,537,Leganes,302051,S. Cissé,5974.0,J. Chicco,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208502_events.json
+1208502,74,,727,Osasuna,46967,Juan Cruz,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208502_events.json
+1208502,78,,727,Osasuna,46658,Rubén García,47391.0,Rubén Peña,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208502_events.json
+1208502,79,,727,Osasuna,2036,Juan Soriano,,,Goal,Own Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208502_events.json
+1208502,82,,727,Osasuna,182592,Jorge Herrando,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208502_events.json
+1208502,88,,537,Leganes,47494,Miguel de la Fuente,184481.0,Diego García,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208502_events.json
+1208502,88,,537,Leganes,131492,Aritz Arambarri,2433.0,R. Tapia,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208502_events.json
+1208502,88,,537,Leganes,47361,D. Brašanac,47321.0,Roberto López,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208502_events.json
+1208502,89,,727,Osasuna,46662,Jon Moncayola,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208502_events.json
+1208502,90,2.0,727,Osasuna,67939,Aimar Oroz,146751.0,Raúl García,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208502_events.json
+1208503,25,,530,Atletico Madrid,2472,Rodrigo de Paul,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208503_events.json
+1208503,28,,547,Girona,155,Abel Ruíz,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208503_events.json
+1208503,37,,547,Girona,158,Paulo Gazzaniga,,,Card,Yellow Card,Handball,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208503_events.json
+1208503,39,,530,Atletico Madrid,56,A. Griezmann,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208503_events.json
+1208503,48,,530,Atletico Madrid,753,Marcos Llorente,56.0,A. Griezmann,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208503_events.json
+1208503,55,,547,Girona,18949,Oriol Romeu,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208503_events.json
+1208503,58,,530,Atletico Madrid,136117,Rodrigo Riquelme,67972.0,C. Gallagher,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208503_events.json
+1208503,58,,547,Girona,1700,Iván Martín,47520.0,Portu,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208503_events.json
+1208503,59,,530,Atletico Madrid,2472,R. De Paul,50.0,Koke,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208503_events.json
+1208503,59,,547,Girona,155,Abel Ruiz,109564.0,B. Miovski,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208503_events.json
+1208503,59,,547,Girona,18949,Oriol Romeu,306727.0,J. Solís,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208503_events.json
+1208503,68,,530,Atletico Madrid,126936,Samuel Lino,22225.0,Reinildo,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208503_events.json
+1208503,68,,547,Girona,2182,V. Tsyhankov,389602.0,Iker Almena,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208503_events.json
+1208503,81,,530,Atletico Madrid,6009,J. Alvarez,8492.0,A. Sørloth,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208503_events.json
+1208503,81,,530,Atletico Madrid,56,A. Griezmann,53.0,Á. Correa,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208503_events.json
+1208503,90,4.0,530,Atletico Madrid,50,Koke,753.0,Marcos Llorente,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208503_events.json
+1208504,14,,532,Valencia,162127,Diego López,47013.0,Rafa Mir,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208504_events.json
+1208504,23,,538,Celta Vigo,162712,Óscar Mingueza,47445.0,Iago Aspas,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208504_events.json
+1208504,25,,538,Celta Vigo,162712,Óscar Mingueza,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208504_events.json
+1208504,28,,538,Celta Vigo,47445,Iago Aspas,162712.0,Óscar Mingueza,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208504_events.json
+1208504,45,5.0,538,Celta Vigo,47445,Iago Aspas,,,Goal,Missed Penalty,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208504_events.json
+1208504,46,,538,Celta Vigo,162712,Óscar Mingueza,157988.0,Sergio Carreira,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208504_events.json
+1208504,60,,538,Celta Vigo,47435,Fran Beltrán,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208504_events.json
+1208504,61,,532,Valencia,315699,Javi Guerra,46933.0,Luis Rioja,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208504_events.json
+1208504,65,,538,Celta Vigo,269163,W. Swedberg,22235.0,J. Bamba,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208504_events.json
+1208504,66,,538,Celta Vigo,26845,T. Douvikas,47348.0,Borja Iglesias,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208504_events.json
+1208504,75,,538,Celta Vigo,384135,Javi Rodríguez,47988.0,C. Starfelt,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208504_events.json
+1208504,77,,532,Valencia,1482,Thierry Correia,47251.0,D. Foulquier,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208504_events.json
+1208504,77,,532,Valencia,162127,Diego López,348326.0,Martín Tejón,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208504_events.json
+1208504,77,,532,Valencia,47264,Hugo Duro,119232.0,Dani Gómez,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208504_events.json
+1208504,78,,538,Celta Vigo,286796,Damián Rodríguez,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208504_events.json
+1208504,84,,532,Valencia,47013,Rafa Mir,288074.0,Alberto Marí,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208504_events.json
+1208504,87,,538,Celta Vigo,47445,Iago Aspas,320517.0,Pablo Durán,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208504_events.json
+1208504,88,,538,Celta Vigo,22235,Jonathan Bamba,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208504_events.json
+1208505,41,,546,Getafe,403554,Christantus Uche,,,Card,Yellow Card,Off the ball foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208505_events.json
+1208505,54,,728,Rayo Vallecano,41552,Ismaila Ciss,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208505_events.json
+1208505,63,,728,Rayo Vallecano,47557,Ó. Trejo,131546.0,Isi Palazón,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208505_events.json
+1208505,63,,728,Rayo Vallecano,128582,Jorge de Frutos,47543.0,Álvaro García,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208505_events.json
+1208505,66,,546,Getafe,325415,N. Aberdin,364415.0,Yellu Santiago,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208505_events.json
+1208505,72,,728,Rayo Vallecano,41552,P. Ciss,47285.0,Unai López,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208505_events.json
+1208505,72,,728,Rayo Vallecano,122657,Randy Nteka,52.0,Sergio Camello,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208505_events.json
+1208505,74,,546,Getafe,143,Carles Aleñá,270516.0,P. González,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208505_events.json
+1208505,74,,546,Getafe,47306,Álex Sola,465838.0,Alberto Risco,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208505_events.json
+1208505,81,,546,Getafe,67955,Carles Pérez,47258.0,M. Arambarri,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208505_events.json
+1208505,82,,728,Rayo Vallecano,46759,Alfonso Espino,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208505_events.json
+1208505,85,,728,Rayo Vallecano,47554,Adri Embarba,46887.0,Pedro Díaz,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208505_events.json
+1208506,28,,720,Valladolid,122233,Marcos André,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208506_events.json
+1208506,50,,541,Real Madrid,756,F. Valverde,10009.0,Rodrygo,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208506_events.json
+1208506,52,,541,Real Madrid,291964,Arda Güler,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208506_events.json
+1208506,58,,720,Valladolid,2459,D. Machís,264470.0,Raúl Moro,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208506_events.json
+1208506,59,,720,Valladolid,181463,Víctor Meseguer,8587.0,S. Amallah,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208506_events.json
+1208506,69,,541,Real Madrid,10009,Rodrygo,754.0,L. Modrić,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208506_events.json
+1208506,69,,541,Real Madrid,291964,A. Güler,744.0,Brahim Díaz,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208506_events.json
+1208506,71,,720,Valladolid,14341,S. Jurić,343205.0,Mario Martín,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208506_events.json
+1208506,71,,720,Valladolid,122233,Marcos André,8518.0,M. Sylla,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208506_events.json
+1208506,85,,541,Real Madrid,762,Vinícius Júnior,748.0,Dani Ceballos,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208506_events.json
+1208506,85,,720,Valladolid,107153,Kike Pérez,104793.0,A. Ndiaye,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208506_events.json
+1208506,86,,541,Real Madrid,278,K. Mbappé,377122.0,Endrick,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208506_events.json
+1208506,88,,541,Real Madrid,744,Brahim Díaz,372.0,Éder Militão,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208506_events.json
+1208506,90,6.0,541,Real Madrid,377122,Endrick,744.0,Brahim Díaz,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208506_events.json
+1208507,2,,533,Villarreal,83,A. Danjuma,182219.0,Álex Baena,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,10,,536,Sevilla,182772,Juanlu Sánchez,,,Var,Goal cancelled,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,45,2.0,536,Sevilla,185398,Isaac Romero,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,45,1.0,533,Villarreal,182219,Alejandro Baena,,,Card,Yellow Card,Time wasting,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,45,7.0,536,Sevilla,25458,D. Lukébakio,1911.0,L. Ocampos,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,63,,533,Villarreal,83,Arnaut Danjuma,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,65,,533,Villarreal,3246,N. Pépé,343684.0,T. Barry,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,65,,533,Villarreal,83,A. Danjuma,18906.0,Ayoze Pérez,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,71,,533,Villarreal,47541,Santi Comesaña,,,Var,Goal cancelled,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,71,,536,Sevilla,25458,D. Lukébakio,957.0,D. Sow,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,71,,536,Sevilla,182772,Juanlu Sánchez,39121.0,C. Ejuke,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,73,,533,Villarreal,47541,Santi Comesaña,928.0,Dani Parejo,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,73,,533,Villarreal,290740,I. Akhomach,184226.0,Yeremy Pino,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,77,,536,Sevilla,297311,Kike Salas,433.0,Marcão,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,77,,536,Sevilla,185398,Isaac Romero,2778.0,K. Ịheanachọ,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,81,,536,Sevilla,195923,José Ángel Carmona,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,84,,533,Villarreal,885,Eric Bailly,,,Card,Yellow Card,Time wasting,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,85,,533,Villarreal,885,E. Bailly,314.0,Raúl Albiol,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,86,,536,Sevilla,1911,L. Ocampos,2054.0,Jesús Navas,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,88,,533,Villarreal,928,Dani Parejo,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,90,6.0,536,Sevilla,21004,Lucien Agoumé,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,90,9.0,533,Villarreal,18906,Ayoze Pérez,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208507,90,5.0,533,Villarreal,18906,Ayoze Pérez,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208507_events.json
+1208508,4,,542,Alaves,40419,Aleksandar Sedlar,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208508_events.json
+1208508,27,,543,Real Betis,47320,Juanmi,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208508_events.json
+1208508,46,,543,Real Betis,1631,R. Rodríguez,20600.0,R. Perraud,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208508_events.json
+1208508,61,,542,Alaves,51241,T. Conechny,263812.0,L. Romero,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208508_events.json
+1208508,61,,542,Alaves,46740,Stoichkov,324750.0,Carlos Martín,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208508_events.json
+1208508,63,,543,Real Betis,47119,Aitor Ruibal,47579.0,E. Ávila,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208508_events.json
+1208508,63,,543,Real Betis,47320,Juanmi,181421.0,A. Ezzalzouli,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208508_events.json
+1208508,64,,543,Real Betis,20600,Romain Perraud,,,Card,Yellow Card,Off the ball foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208508_events.json
+1208508,76,,543,Real Betis,1697,Pablo Fornals,185477.0,Rodri,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208508_events.json
+1208508,77,,543,Real Betis,47341,Marc Roca,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208508_events.json
+1208508,77,,542,Alaves,47396,Kike García,104821.0,Jon Guridi,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208508_events.json
+1208508,77,,542,Alaves,47309,Ander Guevara,6085.0,C. Benavídez,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208508_events.json
+1208508,86,,542,Alaves,40419,Aleksandar Sedlar,,,Card,Red Card,Professional foul last man,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208508_events.json
+1208508,86,,543,Real Betis,1561,Marc Bartra,195100.0,Natan,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208508_events.json
+1208508,88,,542,Alaves,187214,Carlos Vicente,70476.0,M. Diarra,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208508_events.json
+1208508,89,,543,Real Betis,47579,Chimy Ávila,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208508_events.json
+1208509,39,,537,Leganes,47494,Miguel de la Fuente,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208509_events.json
+1208509,45,2.0,534,Las Palmas,70315,Kirian Rodríguez,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208509_events.json
+1208509,54,,537,Leganes,1708,Dani Raba,,,Goal,Missed Penalty,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208509_events.json
+1208509,62,,537,Leganes,1708,Dani Raba,185202.0,Juan Cruz,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208509_events.json
+1208509,62,,537,Leganes,47361,D. Brašanac,2433.0,R. Tapia,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208509_events.json
+1208509,65,,534,Las Palmas,131535,Álex Suárez,46854.0,Viti Rozada,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208509_events.json
+1208509,66,,534,Las Palmas,182519,Alberto Moleiro,21709.0,E. Loiodice,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208509_events.json
+1208509,71,,537,Leganes,185202,Juan Cruz,41976.0,Y. Neyou,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208509_events.json
+1208509,77,,534,Las Palmas,47052,Álex Muñoz,2671.0,Jaime Mata,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208509_events.json
+1208509,78,,534,Las Palmas,162026,Marvin Park,47111.0,Benito Ramírez,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208509_events.json
+1208509,82,,537,Leganes,302051,S. Cissé,129657.0,Enric Franquesa,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208509_events.json
+1208509,82,,537,Leganes,47494,Miguel de la Fuente,184481.0,Diego García,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208509_events.json
+1208509,85,,537,Leganes,129657,Enric Franquesa,47416.0,Óscar Rodríguez,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208509_events.json
+1208509,86,,534,Las Palmas,70315,Kirian Rodríguez,122230.0,Manu Fuster,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208509_events.json
+1208509,87,,537,Leganes,47416,Óscar Rodríguez,162122.0,Adrià Alti,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208509_events.json
+1208509,90,3.0,534,Las Palmas,47324,Sandro Ramírez,19337.0,O. McBurnie,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208509_events.json
+1208510,24,,529,Barcelona,386828,Lamine Yamal,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,38,,531,Athletic Club,47271,Yeray Álvarez,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,41,,529,Barcelona,396623,Pau Cubarsí,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,41,,531,Athletic Club,30510,Álex Berenguer,,,Var,Penalty confirmed,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,42,,531,Athletic Club,128398,Oihan Sancet,,,Goal,Penalty,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,49,,529,Barcelona,433396,Marc Bernal,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,56,,531,Athletic Club,30510,Álex Berenguer,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,62,,531,Athletic Club,128398,Oihan Sancet,332308.0,Unai Gómez,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,63,,529,Barcelona,931,Ferran Torres,340626.0,Fermín López,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,63,,531,Athletic Club,47418,Mikel Vesga,383780.0,Mikel Jauregizar,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,72,,531,Athletic Club,30510,Álex Berenguer,288525.0,Adu Ares,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,75,,529,Barcelona,521,R. Lewandowski,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,78,,531,Athletic Club,47294,I. Williams,47291.0,Gorka Guruzeta,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,78,,531,Athletic Club,182617,Beñat Prados,898.0,Ander Herrera,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,83,,529,Barcelona,433396,Marc Bernal,619.0,Eric García,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,85,,529,Barcelona,521,Robert Lewandowski,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,87,,531,Athletic Club,47276,Íñigo Lekue,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,90,6.0,529,Barcelona,340626,Fermín López,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,90,6.0,531,Athletic Club,383780,Mikel Jauregizar,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,90,6.0,531,Athletic Club,898,Ander Herrera,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,90,1.0,529,Barcelona,161928,Alejandro Balde,181701.0,Gerard Martín,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208510,90,1.0,529,Barcelona,386828,Lamine Yamal,263530.0,Pau Víctor,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208510_events.json
+1208511,55,,727,Osasuna,46658,Rubén García,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208511_events.json
+1208511,62,,798,Mallorca,414,Omar Mascarell,1701.0,Manu Morlanes,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208511_events.json
+1208511,62,,798,Mallorca,25375,T. Asano,2001.0,C. Larin,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208511_events.json
+1208511,71,,727,Osasuna,46658,Rubén García,47574.0,Moi Gómez,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208511_events.json
+1208511,75,,727,Osasuna,182181,Jesús Areso,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208511_events.json
+1208511,77,,727,Osasuna,46646,Sergio Herrera,,,Card,Yellow Card,Time wasting,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208511_events.json
+1208511,79,,727,Osasuna,67939,Aimar Oroz,182621.0,Iker Muñoz,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208511_events.json
+1208511,79,,727,Osasuna,46746,A. Budimir,146751.0,Raúl García,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208511_events.json
+1208511,79,,798,Mallorca,46742,Dani Rodríguez,107194.0,Antonio Sánchez,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208511_events.json
+1208511,80,,727,Osasuna,182181,Jesús Areso,46657.0,Nacho Vidal,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208511_events.json
+1208511,83,,727,Osasuna,182621,Iker Muñoz,139001.0,Pablo Ibáñez,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208511_events.json
+1208511,85,,798,Mallorca,47336,Darder,46751.0,Abdón Prats,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208511_events.json
+1208511,88,,798,Mallorca,2001,Cyle Larin,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208511_events.json
+1208512,23,,532,Valencia,47013,Rafa Mir,,,Card,Yellow Card,Dangerous play,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208512_events.json
+1208512,26,,532,Valencia,333682,Cristhian Mosquera,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208512_events.json
+1208512,45,,531,Athletic Club,182617,Beñat Prados,47275.0,De Marcos,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208512_events.json
+1208512,58,,531,Athletic Club,190489,Álvaro Djaló,183799.0,Nico Williams,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208512_events.json
+1208512,59,,532,Valencia,47013,Rafa Mir,41157.0,André Almeida,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208512_events.json
+1208512,69,,531,Athletic Club,182617,Beñat Prados,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208512_events.json
+1208512,70,,531,Athletic Club,47291,Gorka Guruzeta,47418.0,Mikel Vesga,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208512_events.json
+1208512,71,,531,Athletic Club,182617,Beñat Prados,179153.0,Javi Martón,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208512_events.json
+1208512,71,,531,Athletic Club,128398,Oihan Sancet,332308.0,Unai Gómez,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208512_events.json
+1208512,78,,531,Athletic Club,336998,Adama Boiro,47276.0,Lekue,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208512_events.json
+1208512,82,,532,Valencia,47463,Pepelu,315699.0,Javi Guerra,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208512_events.json
+1208512,82,,532,Valencia,162127,Diego López,348326.0,Martín Tejón,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208512_events.json
+1208512,89,,532,Valencia,162175,Jesús Vázquez,1482.0,Thierry Correia,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208512_events.json
+1208512,89,,532,Valencia,47264,Hugo Duro,119232.0,Dani Gómez,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208512_events.json
+1208512,90,3.0,532,Valencia,47251,Dimitri Foulquier,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208512_events.json
+1208515,62,,536,Sevilla,2778,K. Ịheanachọ,185398.0,Isaac Romero,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208515_events.json
+1208515,63,,536,Sevilla,1427,A. Sambi Lokonga,182772.0,Juanlu Sánchez,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208515_events.json
+1208515,65,,798,Mallorca,107194,Antonio Sánchez,46742.0,Dani Rodríguez,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208515_events.json
+1208515,65,,798,Mallorca,2001,C. Larin,25375.0,T. Asano,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208515_events.json
+1208515,70,,536,Sevilla,25458,D. Lukébakio,2054.0,Jesús Navas,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208515_events.json
+1208515,70,,536,Sevilla,1489,N. Gudelj,433.0,Marcão,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208515_events.json
+1208515,73,,798,Mallorca,1701,Manu Morlanes,414.0,Omar Mascarell,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208515_events.json
+1208515,82,,798,Mallorca,47336,Darder,482473.0,Marc Domenech,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208515_events.json
+1208515,82,,798,Mallorca,50048,V. Muriqi,46751.0,Abdón Prats,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208515_events.json
+1208515,88,,536,Sevilla,957,Djibril Sow,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208515_events.json
+1208515,89,,536,Sevilla,48,Saúl Ñíguez,,,Card,Red Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208515_events.json
+1208515,90,,536,Sevilla,39121,C. Ejuke,21004.0,L. Agoumé,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208515_events.json
+1208517,9,,728,Rayo Vallecano,47285,Unai López,128582.0,Jorge de Frutos,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208517_events.json
+1208517,45,2.0,728,Rayo Vallecano,131546,Isi Palazón,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208517_events.json
+1208517,46,,529,Barcelona,931,Ferran Torres,1323.0,Dani Olmo,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208517_events.json
+1208517,56,,728,Rayo Vallecano,47285,Unai López,41552.0,P. Ciss,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208517_events.json
+1208517,56,,728,Rayo Vallecano,47543,Álvaro García,47554.0,Adri Embarba,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208517_events.json
+1208517,60,,529,Barcelona,133609,Pedri,1496.0,Raphinha,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208517_events.json
+1208517,64,,728,Rayo Vallecano,52,Sergio Camello,122657.0,Randy Nteka,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208517_events.json
+1208517,64,,728,Rayo Vallecano,128582,Jorge de Frutos,47414.0,Gerard Gumbau,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208517_events.json
+1208517,65,,529,Barcelona,181701,Gerard Martín,161928.0,Alejandro Balde,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208517_events.json
+1208517,68,,728,Rayo Vallecano,47109,Óscar Valentín,181734.0,Pep Chavarría,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208517_events.json
+1208517,71,,728,Rayo Vallecano,15900,Abdul Mumin,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208517_events.json
+1208517,73,,529,Barcelona,521,Robert Lewandowski,,,Var,Goal cancelled,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208517_events.json
+1208517,82,,529,Barcelona,1323,Dani Olmo,386828.0,Lamine Yamal,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208517_events.json
+1208517,88,,728,Rayo Vallecano,41552,Ismaila Ciss,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208517_events.json
+1208517,90,4.0,529,Barcelona,433396,Marc Bernal,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208517_events.json
+1208517,90,1.0,529,Barcelona,133609,Pedri,340626.0,Fermín López,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208517_events.json
+1208517,90,6.0,529,Barcelona,386828,Lamine Yamal,263530.0,Pau Víctor,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208517_events.json
+1208518,12,,538,Celta Vigo,47348,Borja Iglesias,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,26,,533,Villarreal,70500,Sergi Cardona,1707.0,Gerard Moreno,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,31,,538,Celta Vigo,162712,Óscar Mingueza,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,46,,533,Villarreal,1707,Gerard Moreno,18906.0,Ayoze Pérez,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,52,,538,Celta Vigo,162123,Ilaix Moriba,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,55,,533,Villarreal,18794,Kiko Femenía,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,58,,533,Villarreal,885,E. Bailly,21997.0,Logan Costa,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,58,,533,Villarreal,184226,Yeremy Pino,3246.0,N. Pépé,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,58,,538,Celta Vigo,157988,Sergio Carreira,329720.0,Hugo Álvarez,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,58,,538,Celta Vigo,162123,I. Moriba,47435.0,Fran Beltrán,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,59,,533,Villarreal,83,A. Danjuma,343684.0,T. Barry,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,60,,533,Villarreal,343684,T. Barry,70500.0,Sergi Cardona,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,64,,533,Villarreal,1364,Jailson,,,Goal,Own Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,70,,538,Celta Vigo,18896,Javier Manquillo,269163.0,W. Swedberg,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,70,,538,Celta Vigo,119213,Alfon González,47445.0,Iago Aspas,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,72,,533,Villarreal,182219,Álex Baena,20696.0,P. Gueye,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,74,,538,Celta Vigo,47348,Borja Iglesias,26845.0,T. Douvikas,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,80,,533,Villarreal,47541,Santi Comesaña,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,80,,538,Celta Vigo,47988,C. Starfelt,162712.0,Óscar Mingueza,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,85,,533,Villarreal,20696,Pape Gueye,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,88,,538,Celta Vigo,269163,Williot Swedberg,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,90,10.0,533,Villarreal,928,Dani Parejo,,,Goal,Missed Penalty,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,90,11.0,533,Villarreal,3246,Nicolas Pépé,,,Card,Yellow Card,Time wasting,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,90,9.0,533,Villarreal,343684,Thierno Barry,,,Var,Penalty confirmed,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,90,8.0,538,Celta Vigo,329720,Hugo Álvarez,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208518,90,10.0,533,Villarreal,928,Dani Parejo                                  0,,,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208518_events.json
+1208520,17,,537,Leganes,129657,Enric Franquesa,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208520_events.json
+1208520,46,,537,Leganes,41976,Yvan Neyou,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208520_events.json
+1208520,46,,537,Leganes,129657,Enric Franquesa,47416.0,Óscar Rodríguez,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208520_events.json
+1208520,61,,720,Valladolid,8518,M. Sylla,162028.0,Juanmi Latasa,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208520_events.json
+1208520,62,,720,Valladolid,104793,A. Ndiaye,46979.0,Iván Sánchez,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208520_events.json
+1208520,62,,720,Valladolid,107153,Kike Pérez,181463.0,Víctor Meseguer,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208520_events.json
+1208520,66,,537,Leganes,302051,S. Cissé,47361.0,D. Brašanac,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208520_events.json
+1208520,66,,537,Leganes,185202,Juan Cruz,47321.0,Roberto López,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208520_events.json
+1208520,69,,537,Leganes,123047,Sergio González,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208520_events.json
+1208520,71,,537,Leganes,5974,J. Chicco,2060.0,M. El Haddadi,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208520_events.json
+1208520,81,,720,Valladolid,264470,Raúl Moro,122233.0,Marcos André,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208520_events.json
+1208520,82,,537,Leganes,47080,Jorge Sáenz,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208520_events.json
+1208520,83,,537,Leganes,47416,Óscar Rodríguez,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208520_events.json
+1208520,85,,537,Leganes,41976,Y. Neyou,2433.0,R. Tapia,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208520_events.json
+1208520,90,4.0,720,Valladolid,14341,Stanko Jurić,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208520_events.json
+1208520,90,2.0,720,Valladolid,8587,S. Amallah,331004.0,Chuky,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1208520_events.json
+1212910,23,,720,Valladolid,264470,Raúl Moro,104793.0,A. Ndiaye,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212910_events.json
+1212910,57,,540,Espanyol,47398,Pere Milla,8683.0,I. Cardona,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212910_events.json
+1212910,57,,540,Espanyol,127426,Pol Lozano,1234.0,A. Král,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212910_events.json
+1212910,62,,720,Valladolid,740,Javi Sánchez,14341.0,S. Jurić,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212910_events.json
+1212910,70,,720,Valladolid,104793,A. Ndiaye,46979.0,Iván Sánchez,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212910_events.json
+1212910,70,,720,Valladolid,8587,S. Amallah,181463.0,Víctor Meseguer,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212910_events.json
+1212910,70,,540,Espanyol,311344,A. Véliz,297742.0,Antoniu Roca,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212910_events.json
+1212910,70,,540,Espanyol,46709,Álvaro Tejero,182674.0,Jofre Carreras,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212910_events.json
+1212910,72,,540,Espanyol,297742,Antoniu Roca,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212910_events.json
+1212910,78,,540,Espanyol,67940,José Gragera,47195.0,Álvaro Aguado,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212910_events.json
+1212910,80,,720,Valladolid,56283,Lucas Rosa,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212910_events.json
+1212910,82,,720,Valladolid,107153,Kike Pérez,331004.0,Chuky,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212910_events.json
+1212910,82,,720,Valladolid,48372,E. Cömert,298064.0,David Torres,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212910_events.json
+1212910,87,,540,Espanyol,8683,Irvin Cardona,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212910_events.json
+1212910,90,7.0,720,Valladolid,46979,Iván Sánchez,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212910_events.json
+1212911,51,,548,Real Sociedad,183744,Beñat Turrientes,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212911_events.json
+1212911,52,,540,Espanyol,311344,Alejo Véliz,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212911_events.json
+1212911,57,,548,Real Sociedad,47323,Mikel Oyarzabal,,,Card,Yellow Card,Argument,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212911_events.json
+1212911,66,,548,Real Sociedad,183744,Beñat Turrientes,32862.0,T. Kubo,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212911_events.json
+1212911,66,,548,Real Sociedad,47440,Brais Méndez,182603.0,Jon Olasagasti,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212911_events.json
+1212911,67,,548,Real Sociedad,47323,Mikel Oyarzabal,31406.0,U. Sadiq,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212911_events.json
+1212911,68,,540,Espanyol,8683,I. Cardona,46764.0,Brian Oliván,subst,Substitution 1,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212911_events.json
+1212911,80,,548,Real Sociedad,32862,T. Kubo,2202.0,H. Traoré,Goal,Normal Goal,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212911_events.json
+1212911,83,,540,Espanyol,67940,José Gragera,297742.0,Antoniu Roca,subst,Substitution 2,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212911_events.json
+1212911,83,,540,Espanyol,182674,Jofre Carreras,47195.0,Álvaro Aguado,subst,Substitution 3,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212911_events.json
+1212911,83,,548,Real Sociedad,2202,H. Traoré,199044.0,J. Aramburu,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212911_events.json
+1212911,86,,548,Real Sociedad,37938,S. Becker,290106.0,Pablo Marín,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212911_events.json
+1212911,87,,540,Espanyol,286601,O. El Hilali,46709.0,Álvaro Tejero,subst,Substitution 4,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212911_events.json
+1212911,87,,540,Espanyol,184420,Carlos Romero,47398.0,Pere Milla,subst,Substitution 5,,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212911_events.json
+1212911,90,7.0,540,Espanyol,30924,Marash Kumbulla,,,Card,Yellow Card,Foul,2026-05-04,raw/api_football/fixture_events/2026-04-30/fixture_1212911_events.json
