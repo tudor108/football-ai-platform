@@ -18,14 +18,24 @@ MAX_FIXTURES_PER_RUN = 25
 
 
 def run_extraction() -> None:
-    """Run the daily extraction flow."""
-    extract_leagues(country="Spain", season=SEASON)
-    extract_all_for_league(league_id=LA_LIGA_ID, season=SEASON)
-    extract_all_fixture_details(
-        league_id=LA_LIGA_ID,
-        season=SEASON,
-        max_fixtures=MAX_FIXTURES_PER_RUN,
+    """Run the daily extraction flow with per-step isolation."""
+    steps = (
+        ("leagues", lambda: extract_leagues(country="Spain", season=SEASON)),
+        ("league bundle", lambda: extract_all_for_league(league_id=LA_LIGA_ID, season=SEASON)),
+        (
+            "fixture details",
+            lambda: extract_all_fixture_details(
+                league_id=LA_LIGA_ID,
+                season=SEASON,
+                max_fixtures=MAX_FIXTURES_PER_RUN,
+            ),
+        ),
     )
+    for name, runner in steps:
+        try:
+            runner()
+        except Exception as error:  # noqa: BLE001 - keep going so other steps + upload run
+            print(f"[ERROR] Extraction step '{name}' failed: {error}")
 
 
 def run_upload() -> None:
@@ -38,7 +48,11 @@ def main() -> None:
     print("[INFO] === Step 1: extract from API ===")
     run_extraction()
     print("[INFO] === Step 2: upload to GCS ===")
-    run_upload()
+    try:
+        run_upload()
+    except Exception as error:  # noqa: BLE001
+        print(f"[ERROR] Upload step failed: {error}")
+        raise
     print("[INFO] Pipeline complete.")
 
 

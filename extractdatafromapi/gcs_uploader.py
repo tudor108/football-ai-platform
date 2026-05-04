@@ -47,6 +47,15 @@ def iter_local_files(local_root: Path) -> Iterable[Path]:
             yield path
 
 
+def download_blob_to_file(bucket_name: str, blob_name: str, local_path: Path) -> None:
+    """Download a single blob to a local file path."""
+    client = get_storage_client()
+    bucket = client.bucket(bucket_name)
+    blob = bucket.blob(blob_name)
+    local_path.parent.mkdir(parents=True, exist_ok=True)
+    blob.download_to_filename(str(local_path))
+
+
 def upload_file(bucket_name: str, local_path: Path, blob_name: str) -> None:
     """Upload a single local file to the bucket under the given blob name."""
     client = get_storage_client()

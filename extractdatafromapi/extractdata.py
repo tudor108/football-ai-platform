@@ -164,6 +164,42 @@ def file_already_exists(source: str, entity: str, filename: str) -> bool:
     return filename in get_remote_blob_filenames()
 
 
+def ensure_local_copy(source: str, entity: str, filename: str) -> Path | None:
+    """Make sure a previously-saved file is available locally; download it from GCS if not."""
+    entity_root = Path("data") / "raw" / source / entity
+    if entity_root.exists():
+        local_matches = sorted(entity_root.glob(f"*/{filename}"), reverse=True)
+        if local_matches:
+            return local_matches[0]
+
+    # Look up the full blob path in GCS by matching the trailing filename.
+    try:
+        from extractdatafromapi.gcs_uploader import (
+            download_blob_to_file,
+            get_bucket_name,
+            list_existing_blob_names,
+        )
+        bucket = get_bucket_name()
+        prefix = f"raw/{source}/{entity}/"
+        all_blobs = list_existing_blob_names(bucket, prefix=prefix)
+        candidates = sorted(
+            (name for name in all_blobs if name.endswith(f"/{filename}")),
+            reverse=True,
+        )
+        if not candidates:
+            return None
+        blob_name = candidates[0]
+        # Mirror the GCS path locally: strip the leading "raw/" prefix.
+        relative = blob_name[len("raw/"):] if blob_name.startswith("raw/") else blob_name
+        local_path = Path("data") / "raw" / relative
+        print(f"[INFO] Downloading {blob_name} -> {local_path}")
+        download_blob_to_file(bucket, blob_name, local_path)
+        return local_path
+    except Exception as error:  # noqa: BLE001 - GCS optional locally
+        print(f"[WARN] Could not fetch {filename} from GCS: {error}")
+        return None
+
+
 def save_json(data: dict[str, Any], source: str, entity: str, filename: str) -> Path:
     """Save a JSON payload to the raw data folder using a dated directory structure."""
     output_path = build_output_path(source, entity, filename)
@@ -226,12 +262,12 @@ def extract_players_all_pages(league_id: int, season: int) -> list[dict[str, Any
     page_one_name = f"players_league_{league_id}_{season}_page_1.json"
     if file_already_exists(SOURCE_NAME, "players", page_one_name):
         print(f"[SKIP] players page 1 already extracted.")
-        # Find the most recent existing copy across dated folders.
-        existing = sorted(
-            (Path("data") / "raw" / SOURCE_NAME / "players").glob(f"*/{page_one_name}"),
-            reverse=True,
-        )
-        with existing[0].open("r", encoding="utf-8") as fh:
+        existing_path = ensure_local_copy(SOURCE_NAME, "players", page_one_name)
+        if existing_path is None:
+            raise FileNotFoundError(
+                f"players page 1 marked as existing but could not be located: {page_one_name}"
+            )
+        with existing_path.open("r", encoding="utf-8") as fh:
             first_page = json.load(fh)
     else:
         first_page = call_api("players", {"league": league_id, "season": season, "page": 1})
@@ -290,20 +326,13 @@ def slugify(value: str) -> str:
 
 def load_fixture_ids_from_saved_fixtures(league_id: int, season: int) -> list[int]:
     """Read fixture ids from the most recent saved fixtures snapshot for a league/season."""
-    fixtures_root = Path("data") / "raw" / SOURCE_NAME / "fixtures"
     target_filename = f"fixtures_league_{league_id}_{season}.json"
 
-    if not fixtures_root.exists():
-        raise FileNotFoundError(f"Fixtures folder not found: {fixtures_root}")
-
-    # Search across all dated subfolders, pick the most recent one.
-    matches = sorted(fixtures_root.glob(f"*/{target_filename}"), reverse=True)
-    if not matches:
+    fixtures_path = ensure_local_copy(SOURCE_NAME, "fixtures", target_filename)
+    if fixtures_path is None:
         raise FileNotFoundError(
-            f"No saved fixtures file for league {league_id} season {season} under {fixtures_root}"
+            f"No saved fixtures file for league {league_id} season {season} (local or remote)"
         )
-
-    fixtures_path = matches[0]
     with fixtures_path.open("r", encoding="utf-8") as fh:
         payload = json.load(fh)
 
