@@ -114,6 +114,7 @@ output:
   clusters_dir: output/ml/clusters
   metrics_dir: output/ml/metrics
   plots_dir: output/ml/plots
+  report_dir: output/ml/report
   load_to_bigquery: false
   bq_table: ml_team_clusters
 

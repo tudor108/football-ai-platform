@@ -16,6 +16,7 @@ from ml.clustering.algorithms import run_clustering_algorithms
 from ml.clustering.evaluation import evaluate_clustering_results
 from ml.clustering.interpretation import interpret_clusters
 from ml.clustering.visualization import visualize_clusters
+from ml.reporting.cluster_reporting import write_cluster_report
 from ml.features.build_team_features import (
     build_features,
     build_team_level_from_match_features,
@@ -28,7 +29,7 @@ from ml.utils.validation import validate_config
 
 
 def _ensure_output_dirs(config: dict[str, Any]) -> None:
-    for key in ("clusters_dir", "metrics_dir", "plots_dir"):
+    for key in ("clusters_dir", "metrics_dir", "plots_dir", "report_dir"):
         out_dir = Path(config["output"][key])
         out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -70,6 +71,10 @@ def main(config_path: str) -> None:
     run_results = run_clustering_algorithms(features_df, config)
     metrics, best = evaluate_clustering_results(run_results, config)
 
+    x_proc = run_results["X_proc"]
+    pca_x = x_proc[:, 0]
+    pca_y = x_proc[:, 1] if x_proc.shape[1] > 1 else [0.0] * len(pca_x)
+
     best_labels = pd.DataFrame(
         {
             "team_id": features_df["team_id"].values,
@@ -77,13 +82,46 @@ def main(config_path: str) -> None:
             "cluster": best["labels"],
             "best_algorithm": best["algorithm"],
             "candidate_id": best["candidate_id"],
+            "pca_x": pca_x,
+            "pca_y": pca_y,
         }
     )
 
     interpretations = interpret_clusters(best_labels[["team_id", "cluster"]], features_df, config)
 
+    # Enrich cluster-level semantics into team-level output.
+    enrich_rows: list[dict[str, Any]] = []
+    for cid, info in interpretations.items():
+        diff_items = list(info["diff_vs_global"].items())[:5]
+        row = {
+            "cluster": int(cid),
+            "cluster_label": info["label"],
+            "cluster_description": info["description"],
+            "strengths": "; ".join(info["strengths"]),
+            "weaknesses": "; ".join(info["weaknesses"]),
+            "is_outlier_like": info["is_outlier_like"],
+            "cluster_warning": info.get("warning"),
+            "cluster_confidence_score": info["confidence_score"],
+        }
+        for idx in range(5):
+            if idx < len(diff_items):
+                feat_name, feat_value = diff_items[idx]
+                row[f"feat_{idx+1}_name"] = feat_name
+                row[f"feat_{idx+1}_value"] = abs(float(feat_value))
+            else:
+                row[f"feat_{idx+1}_name"] = None
+                row[f"feat_{idx+1}_value"] = None
+        enrich_rows.append(row)
+    enrich_df = pd.DataFrame(enrich_rows)
+    best_labels = best_labels.merge(enrich_df, on="cluster", how="left")
+
     try:
-        visualize_clusters(run_results["X_proc"], best_labels, config)
+        visualize_clusters(
+            best_labels=best_labels,
+            features_df=features_df,
+            features=config["features"],
+            out_dir=config["output"]["plots_dir"],
+        )
     except Exception as error:  # noqa: BLE001
         logger.warning("Visualization failed: %s", error)
 
@@ -91,6 +129,7 @@ def main(config_path: str) -> None:
     metrics_path = os.path.join(config["output"]["metrics_dir"], "metrics.json")
     interpretation_path = os.path.join(config["output"]["metrics_dir"], "cluster_interpretation.json")
     summary_path = os.path.join(config["output"]["metrics_dir"], "best_model_summary.json")
+    report_path = os.path.join(config["output"]["report_dir"], "cluster_report.md")
 
     best_labels.to_csv(clusters_path, index=False, encoding="utf-8-sig")
     with open(metrics_path, "w", encoding="utf-8") as f:
@@ -108,6 +147,17 @@ def main(config_path: str) -> None:
             f,
             indent=2,
         )
+    write_cluster_report(
+        output_report_path=report_path,
+        best_summary={
+            "algorithm": best["algorithm"],
+            "candidate_id": best["candidate_id"],
+            "params": best["params"],
+            "metric": best["metric"],
+        },
+        metrics=metrics,
+        interpretations=interpretations,
+    )
 
     if config.get("mlflow", {}).get("enabled", False):
         mlflow_run(config, best, metrics)
