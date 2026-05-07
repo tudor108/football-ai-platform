@@ -2,8 +2,8 @@ name: Daily API-Football extraction
 
 on:
   schedule:
-    # Runs at 00:00 UTC every day = 03:00 Romania time (EEST in summer).
-    - cron: "0 0 * * *"
+    # Runs daily at 02:32 UTC (~05:32 Romania during EEST / ~04:32 during EET).
+    - cron: "32 2 * * *"
   workflow_dispatch: {}
 
 permissions:
