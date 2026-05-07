@@ -1,0 +1,10 @@
+pandas
+google-cloud-bigquery
+scikit-learn
+matplotlib
+seaborn
+mlflow
+pyyaml
+numpy
+# Optional for advanced clustering
+hdbscan

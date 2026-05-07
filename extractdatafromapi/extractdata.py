@@ -18,6 +18,8 @@ DEFAULT_TIMEOUT = 60
 DEFAULT_RETRIES = 3
 # Free tier API-Football allows 10 requests/minute -> stay safely below that.
 REQUEST_INTERVAL_SECONDS = 7.0
+# API-Football free plan currently limits players endpoint pagination to page <= 3.
+MAX_PLAYERS_PAGE = 3
 
 _API_KEY_CACHE: str | None = None
 _LAST_REQUEST_TS: float = 0.0
@@ -276,7 +278,15 @@ def extract_players_all_pages(league_id: int, season: int) -> list[dict[str, Any
     all_pages.append(first_page)
     total_pages = get_total_pages(first_page)
 
-    for page_number in range(2, total_pages + 1):
+    capped_total_pages = min(total_pages, MAX_PLAYERS_PAGE)
+    if capped_total_pages < total_pages:
+        print(
+            f"[WARN] players endpoint reports {total_pages} pages, "
+            f"but current plan supports up to page {MAX_PLAYERS_PAGE}. "
+            f"Extracting first {capped_total_pages} pages only."
+        )
+
+    for page_number in range(2, capped_total_pages + 1):
         filename = f"players_league_{league_id}_{season}_page_{page_number}.json"
         if file_already_exists(SOURCE_NAME, "players", filename):
             print(f"[SKIP] players page {page_number} already extracted today.")
