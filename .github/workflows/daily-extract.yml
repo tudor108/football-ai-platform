@@ -41,4 +41,4 @@ jobs:
           service_account: github-actions-uploader@project-73d1e32a-8e68-4750-93c.iam.gserviceaccount.com
 
       - name: Run full pipeline (extract + transform + derive + load BigQuery)
-        run: python run_all_local.py
+        run: python data_engineering/run_all_local.py
