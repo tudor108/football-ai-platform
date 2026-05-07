@@ -23,6 +23,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: Debug workflow revision
+        run: |
+          echo "GITHUB_SHA=$GITHUB_SHA"
+          git rev-parse HEAD
+          echo "--- workflow file ---"
+          cat .github/workflows/daily-extract.yml
 
       - name: Set up Python
         uses: actions/setup-python@v5
