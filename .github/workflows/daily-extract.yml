@@ -1,4 +1,4 @@
-name: Daily API-Football extraction
+name: Daily Football Data + ML Pipeline
 
 on:
   schedule:
@@ -40,5 +40,5 @@ jobs:
           workload_identity_provider: projects/205718552008/locations/global/workloadIdentityPools/github-pool/providers/github-provider
           service_account: github-actions-uploader@project-73d1e32a-8e68-4750-93c.iam.gserviceaccount.com
 
-      - name: Run full pipeline (extract + transform + derive + load BigQuery)
+      - name: Run full data + ML pipeline (extract -> transform -> derive -> cluster -> load BigQuery)
         run: python data_engineering/run_all_local.py
