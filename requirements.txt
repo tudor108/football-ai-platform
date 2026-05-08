@@ -5,3 +5,5 @@ google-cloud-bigquery>=3.25
 pandas>=2.2
 numpy>=1.26
 PyYAML>=6.0
+scikit-learn>=1.5
+matplotlib>=3.9
