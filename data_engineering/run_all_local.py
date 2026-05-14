@@ -60,7 +60,7 @@ def main() -> None:
     output_root = Path("output")
     if output_root.exists():
         # Uploaded as processed/tables/*, processed/derived/*, processed/ml/*
-        upload_local_folder(output_root)
+        upload_local_folder(output_root, skip_existing=False)
     else:
         print("[WARN] No output folder to upload.")
 
