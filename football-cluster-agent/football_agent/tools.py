@@ -33,6 +33,7 @@ _FORBIDDEN_SQL = re.compile(
     r"\b(insert|update|delete|merge|drop|alter|create|truncate|grant|revoke)\b",
     re.IGNORECASE,
 )
+_DISALLOWED_PUBLIC = re.compile(r"\bbigquery-public-data\b", re.IGNORECASE)
 
 
 def _list_blobs(prefix: str) -> list[tuple[str, datetime]]:
@@ -69,6 +70,46 @@ def list_latest_clustering_run() -> dict[str, Any]:
         "latest_blob": latest_blob,
         "latest_updated_utc": latest_updated.isoformat(),
         "blob_count": len(blobs),
+    }
+
+
+def list_output_artifact_timestamps(folder: str = "", limit: int = 200) -> dict[str, Any]:
+    """List output/ml artifact files with UTC last-updated timestamps.
+
+    Args:
+        folder: Optional folder under output prefix (e.g., "metrics", "clusters", "report").
+        limit: Max number of files to return.
+    """
+    safe_limit = max(1, min(int(limit), 1000))
+    clean_folder = folder.strip().strip("/")
+    prefix = f"{CLUSTER_OUTPUT_PREFIX}/"
+    if clean_folder:
+        prefix = f"{prefix}{clean_folder}/"
+
+    bucket = _STORAGE.bucket(CLUSTER_BUCKET)
+    blobs = list(bucket.list_blobs(prefix=prefix))
+    file_rows: list[dict[str, Any]] = []
+    for blob in blobs:
+        # Skip virtual folder placeholders.
+        if blob.name.endswith("/"):
+            continue
+        updated = blob.updated.astimezone(timezone.utc).isoformat() if blob.updated else None
+        file_rows.append(
+            {
+                "path": blob.name,
+                "updated_utc": updated,
+                "size_bytes": int(blob.size or 0),
+            }
+        )
+
+    # Most recent first.
+    file_rows.sort(key=lambda x: x["updated_utc"] or "", reverse=True)
+    return {
+        "status": "ok",
+        "bucket": CLUSTER_BUCKET,
+        "prefix": prefix,
+        "total_files": len(file_rows),
+        "files": file_rows[:safe_limit],
     }
 
 
@@ -110,6 +151,15 @@ def query_bigquery(sql: str, max_rows: int = 500) -> list[dict[str, Any]]:
         raise ValueError("Only SELECT statements are allowed.")
     if _FORBIDDEN_SQL.search(sql):
         raise ValueError("Write/DDL keyword detected. Query blocked.")
+    if _DISALLOWED_PUBLIC.search(sql):
+        raise ValueError(
+            f"Query blocked: use only `{PROJECT_ID}.{BQ_DATASET}` tables. "
+            "Public datasets are disabled for this agent deployment."
+        )
+    if f"`{PROJECT_ID}.{BQ_DATASET}." not in sql and f"{PROJECT_ID}.{BQ_DATASET}." not in sql:
+        raise ValueError(
+            f"Query blocked: target dataset must be `{PROJECT_ID}.{BQ_DATASET}`."
+        )
 
     query_job = _BQ.query(
         sql,

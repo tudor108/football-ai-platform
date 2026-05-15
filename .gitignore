@@ -1,8 +1,31 @@
-.env
-.venv/
+# Python
 __pycache__/
-*.pyc
-data/
-*.json.key
-gcp-key*.json
-service-account*.json
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# ADK local state
+.adk/
+football-cluster-agent/.adk/
+football-cluster-agent/football_agent/.adk/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local outputs/artifacts
+output/ml/
+*.log
+*.tmp
+
+# Env files
+.env
+.env.*
+!.env.example
