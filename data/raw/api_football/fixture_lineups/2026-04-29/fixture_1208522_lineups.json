@@ -1,0 +1,468 @@
+{
+    "get": "fixtures/lineups",
+    "parameters": {
+        "fixture": "1208522"
+    },
+    "errors": [],
+    "results": 2,
+    "paging": {
+        "current": 1,
+        "total": 1
+    },
+    "response": [
+        {
+            "team": {
+                "id": 529,
+                "name": "Barcelona",
+                "logo": "https://media.api-sports.io/football/teams/529.png",
+                "colors": {
+                    "player": {
+                        "primary": "7d1537",
+                        "number": "efc006",
+                        "border": "7d1537"
+                    },
+                    "goalkeeper": {
+                        "primary": "15aa85",
+                        "number": "faf9f9",
+                        "border": "15aa85"
+                    }
+                }
+            },
+            "coach": {
+                "id": 6472,
+                "name": "H. Flick",
+                "photo": "https://media.api-sports.io/football/coachs/6472.png"
+            },
+            "formation": "4-3-3",
+            "startXI": [
+                {
+                    "player": {
+                        "id": 127,
+                        "name": "M. ter Stegen",
+                        "number": 1,
+                        "pos": "G",
+                        "grid": "1:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 1257,
+                        "name": "J. Koundé",
+                        "number": 23,
+                        "pos": "D",
+                        "grid": "2:4"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 396623,
+                        "name": "Pau Cubarsí",
+                        "number": 2,
+                        "pos": "D",
+                        "grid": "2:3"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 2670,
+                        "name": "Iñigo Martínez",
+                        "number": 5,
+                        "pos": "D",
+                        "grid": "2:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 161928,
+                        "name": "Alejandro Balde",
+                        "number": 3,
+                        "pos": "D",
+                        "grid": "2:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 1323,
+                        "name": "Dani Olmo",
+                        "number": 20,
+                        "pos": "M",
+                        "grid": "3:3"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 329728,
+                        "name": "Marc Casadó",
+                        "number": 17,
+                        "pos": "M",
+                        "grid": "3:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 133609,
+                        "name": "Pedri",
+                        "number": 8,
+                        "pos": "M",
+                        "grid": "3:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 386828,
+                        "name": "Lamine Yamal",
+                        "number": 19,
+                        "pos": "F",
+                        "grid": "4:3"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 521,
+                        "name": "R. Lewandowski",
+                        "number": 9,
+                        "pos": "F",
+                        "grid": "4:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 1496,
+                        "name": "Raphinha",
+                        "number": 11,
+                        "pos": "F",
+                        "grid": "4:1"
+                    }
+                }
+            ],
+            "substitutes": [
+                {
+                    "player": {
+                        "id": 396624,
+                        "name": "Sergi Domínguez",
+                        "number": 36,
+                        "pos": "D",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 619,
+                        "name": "Eric García",
+                        "number": 24,
+                        "pos": "D",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 340626,
+                        "name": "Fermín López",
+                        "number": 16,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 931,
+                        "name": "Ferran Torres",
+                        "number": 7,
+                        "pos": "F",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 285909,
+                        "name": "Pablo Torre",
+                        "number": 14,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 263530,
+                        "name": "Pau Víctor",
+                        "number": 18,
+                        "pos": "F",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 336653,
+                        "name": "Ander Astralaga",
+                        "number": 26,
+                        "pos": "G",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 181701,
+                        "name": "Gerard Martín",
+                        "number": 35,
+                        "pos": "D",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 126,
+                        "name": "Iñaki Peña",
+                        "number": 13,
+                        "pos": "G",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 386859,
+                        "name": "Héctor Fort",
+                        "number": 32,
+                        "pos": "D",
+                        "grid": null
+                    }
+                }
+            ]
+        },
+        {
+            "team": {
+                "id": 720,
+                "name": "Valladolid",
+                "logo": "https://media.api-sports.io/football/teams/720.png",
+                "colors": {
+                    "player": {
+                        "primary": "96549b",
+                        "number": "ffffff",
+                        "border": "96549b"
+                    },
+                    "goalkeeper": {
+                        "primary": "39f654",
+                        "number": "000000",
+                        "border": "39f654"
+                    }
+                }
+            },
+            "coach": {
+                "id": 783,
+                "name": "P. Pezzolano",
+                "photo": "https://media.api-sports.io/football/coachs/783.png"
+            },
+            "formation": "4-1-4-1",
+            "startXI": [
+                {
+                    "player": {
+                        "id": 169295,
+                        "name": "K. Hein",
+                        "number": 13,
+                        "pos": "G",
+                        "grid": "1:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 47078,
+                        "name": "Luis Pérez",
+                        "number": 2,
+                        "pos": "D",
+                        "grid": "2:4"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 48372,
+                        "name": "E. Cömert",
+                        "number": 15,
+                        "pos": "D",
+                        "grid": "2:3"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 740,
+                        "name": "Javi Sánchez",
+                        "number": 5,
+                        "pos": "D",
+                        "grid": "2:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 56283,
+                        "name": "Lucas Rosa",
+                        "number": 22,
+                        "pos": "D",
+                        "grid": "2:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 14341,
+                        "name": "S. Jurić",
+                        "number": 20,
+                        "pos": "M",
+                        "grid": "3:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 46979,
+                        "name": "Iván Sánchez",
+                        "number": 10,
+                        "pos": "M",
+                        "grid": "4:4"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 107153,
+                        "name": "Kike Pérez",
+                        "number": 8,
+                        "pos": "M",
+                        "grid": "4:3"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 8587,
+                        "name": "S. Amallah",
+                        "number": 21,
+                        "pos": "M",
+                        "grid": "4:2"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 264470,
+                        "name": "Raúl Moro",
+                        "number": 11,
+                        "pos": "M",
+                        "grid": "4:1"
+                    }
+                },
+                {
+                    "player": {
+                        "id": 122233,
+                        "name": "Marcos André",
+                        "number": 9,
+                        "pos": "F",
+                        "grid": "5:1"
+                    }
+                }
+            ],
+            "substitutes": [
+                {
+                    "player": {
+                        "id": 162028,
+                        "name": "Juanmi Latasa",
+                        "number": 14,
+                        "pos": "F",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 331004,
+                        "name": "Chuky",
+                        "number": 28,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 343205,
+                        "name": "Mario Martín",
+                        "number": 12,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 72048,
+                        "name": "C. Özkacar",
+                        "number": 6,
+                        "pos": "D",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 181463,
+                        "name": "Víctor Meseguer",
+                        "number": 4,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 104793,
+                        "name": "A. Ndiaye",
+                        "number": 19,
+                        "pos": "F",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 8518,
+                        "name": "M. Sylla",
+                        "number": 7,
+                        "pos": "F",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 298064,
+                        "name": "David Torres",
+                        "number": 3,
+                        "pos": "D",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 2459,
+                        "name": "D. Machís",
+                        "number": 18,
+                        "pos": "F",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 41320,
+                        "name": "André Ferreira",
+                        "number": 1,
+                        "pos": "G",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 332304,
+                        "name": "Raúl Chasco",
+                        "number": 30,
+                        "pos": "M",
+                        "grid": null
+                    }
+                },
+                {
+                    "player": {
+                        "id": 361386,
+                        "name": "Koke",
+                        "number": 32,
+                        "pos": "D",
+                        "grid": null
+                    }
+                }
+            ]
+        }
+    ]
+}

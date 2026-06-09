@@ -1,0 +1,1310 @@
+{
+    "get": "leagues",
+    "parameters": {
+        "country": "Spain",
+        "season": "2024"
+    },
+    "errors": [],
+    "results": 35,
+    "paging": {
+        "current": 1,
+        "total": 1
+    },
+    "response": [
+        {
+            "league": {
+                "id": 140,
+                "name": "La Liga",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/140.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-08-15",
+                    "end": "2025-05-25",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": true,
+                            "statistics_players": true
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": true,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 141,
+                "name": "Segunda División",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/141.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-08-15",
+                    "end": "2025-06-21",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": true,
+                            "statistics_players": true
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 556,
+                "name": "Super Cup",
+                "type": "Cup",
+                "logo": "https://media.api-sports.io/football/leagues/556.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2025-01-08",
+                    "end": "2025-01-12",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": true,
+                            "statistics_players": true
+                        },
+                        "standings": false,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 436,
+                "name": "Primera División RFEF - Group 2",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/436.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-08-25",
+                    "end": "2025-05-25",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 435,
+                "name": "Primera División RFEF - Group 1",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/435.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-08-25",
+                    "end": "2025-05-25",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 875,
+                "name": "Segunda División RFEF - Group 1",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/875.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-01",
+                    "end": "2025-05-04",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 879,
+                "name": "Segunda División RFEF - Group 5",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/879.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-01",
+                    "end": "2025-05-04",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 878,
+                "name": "Segunda División RFEF - Group 4",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/878.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-01",
+                    "end": "2025-05-04",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 877,
+                "name": "Segunda División RFEF - Group 3",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/877.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-01",
+                    "end": "2025-05-04",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 876,
+                "name": "Segunda División RFEF - Group 2",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/876.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-01",
+                    "end": "2025-05-04",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 441,
+                "name": "Tercera División RFEF - Group 3",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/441.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-08",
+                    "end": "2025-05-11",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 442,
+                "name": "Tercera División RFEF - Group 4",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/442.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-07",
+                    "end": "2025-05-11",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 443,
+                "name": "Tercera División RFEF - Group 5",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/443.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-08",
+                    "end": "2025-05-11",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 446,
+                "name": "Tercera División RFEF - Group 8",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/446.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-07",
+                    "end": "2025-05-11",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 449,
+                "name": "Tercera División RFEF - Group 11",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/449.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-07",
+                    "end": "2025-05-11",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 455,
+                "name": "Tercera División RFEF - Group 17",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/455.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-07",
+                    "end": "2025-05-11",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 440,
+                "name": "Tercera División RFEF - Group 2",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/440.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-08",
+                    "end": "2025-05-11",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 439,
+                "name": "Tercera División RFEF - Group 1",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/439.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-08",
+                    "end": "2025-05-11",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 450,
+                "name": "Tercera División RFEF - Group 12",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/450.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-06",
+                    "end": "2025-05-11",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 452,
+                "name": "Tercera División RFEF - Group 14",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/452.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-07",
+                    "end": "2025-05-11",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 453,
+                "name": "Tercera División RFEF - Group 15",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/453.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-06",
+                    "end": "2025-05-11",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 456,
+                "name": "Tercera División RFEF - Group 18",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/456.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-07",
+                    "end": "2025-05-11",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 451,
+                "name": "Tercera División RFEF - Group 13",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/451.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-08",
+                    "end": "2025-05-11",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 454,
+                "name": "Tercera División RFEF - Group 16",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/454.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-08",
+                    "end": "2025-05-11",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 445,
+                "name": "Tercera División RFEF - Group 7",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/445.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-08",
+                    "end": "2025-05-11",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 448,
+                "name": "Tercera División RFEF - Group 10",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/448.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-08",
+                    "end": "2025-05-11",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 142,
+                "name": "Primera División Femenina",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/142.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-08",
+                    "end": "2025-05-18",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": true,
+                            "statistics_players": true
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 444,
+                "name": "Tercera División RFEF - Group 6",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/444.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-06",
+                    "end": "2025-05-11",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 447,
+                "name": "Tercera División RFEF - Group 9",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/447.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-07",
+                    "end": "2025-05-11",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": true,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 1058,
+                "name": "Supercopa Femenina",
+                "type": "Cup",
+                "logo": "https://media.api-sports.io/football/leagues/1058.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2025-01-22",
+                    "end": "2025-01-26",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": false,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 735,
+                "name": "Copa Federacion",
+                "type": "Cup",
+                "logo": "https://media.api-sports.io/football/leagues/735.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-09-25",
+                    "end": "2024-11-13",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": false,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": false,
+                        "players": false,
+                        "top_scorers": false,
+                        "top_assists": false,
+                        "top_cards": false,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 143,
+                "name": "Copa del Rey",
+                "type": "Cup",
+                "logo": "https://media.api-sports.io/football/leagues/143.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2024-10-09",
+                    "end": "2025-04-25",
+                    "current": false,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": true,
+                            "statistics_players": true
+                        },
+                        "standings": false,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 1000,
+                "name": "Segunda División RFEF - Play-offs",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/1000.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2025-05-10",
+                    "end": "2025-05-30",
+                    "current": true,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": false,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 977,
+                "name": "Tercera División RFEF - Promotion - Play-offs",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/977.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2025-05-17",
+                    "end": "2025-06-22",
+                    "current": true,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": false,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": false,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        },
+        {
+            "league": {
+                "id": 1006,
+                "name": "Primera División RFEF - Play Offs",
+                "type": "League",
+                "logo": "https://media.api-sports.io/football/leagues/1006.png"
+            },
+            "country": {
+                "name": "Spain",
+                "code": "ES",
+                "flag": "https://media.api-sports.io/flags/es.svg"
+            },
+            "seasons": [
+                {
+                    "year": 2024,
+                    "start": "2025-05-28",
+                    "end": "2025-06-22",
+                    "current": true,
+                    "coverage": {
+                        "fixtures": {
+                            "events": true,
+                            "lineups": true,
+                            "statistics_fixtures": false,
+                            "statistics_players": false
+                        },
+                        "standings": false,
+                        "players": true,
+                        "top_scorers": true,
+                        "top_assists": true,
+                        "top_cards": true,
+                        "injuries": true,
+                        "predictions": true,
+                        "odds": false
+                    }
+                }
+            ]
+        }
+    ]
+}
