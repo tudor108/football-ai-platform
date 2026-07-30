@@ -39,6 +39,9 @@ Then load this agent and ask:
 - Explain cluster 2 in simple terms.
 - Why is Team X outlier-like?
 - Compare Team A and Team B.
+- I like attacking, in-form teams. Which clubs are most similar to Barcelona
+  through that lens?
+- Give me a statistical forecast for Barcelona at home against Real Madrid.
 
 ## Tools exposed
 - `list_latest_clustering_run()`
@@ -50,6 +53,32 @@ Then load this agent and ask:
 - `query_bigquery(sql)` (SELECT-only safety)
 - `explain_cluster(cluster_id)`
 - `compare_teams(team_a, team_b)`
+- `personalized_team_similarity(...)`
+- `predict_match_from_stats(home_team, away_team)`
+
+## Personalized similarity
+
+The official cluster assignment remains unchanged. The agent maps a user's
+stated preferences to five bounded dimensions (`attack`, `defense`, `results`,
+`recent_form`, and `consistency`), reweights the feature-space distance, and
+returns:
+
+- nearest teams under that personal lens;
+- distance to every official cluster centroid;
+- preference-fit recommendations.
+
+All similarity values are relative indexes, not probabilities. The current MVP
+uses the active conversation context and does not persist a user profile across
+Cloud Run restarts.
+
+## Match forecasts
+
+The prediction tool produces uncalibrated 1/X/2 and goal probabilities from
+historical home/away scoring rates, Bayesian smoothing, recent form, and an
+independent Poisson goals baseline. It also returns expected goals, likely
+scores, data recency, confidence, and explicit limitations. It does not use
+confirmed lineups, injuries, suspensions, bookmaker odds, or tactical matchup
+data.
 
 ## Cloud Run deployment (later)
 1. Build container image.

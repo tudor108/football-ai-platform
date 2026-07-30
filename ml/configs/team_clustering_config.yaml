@@ -111,12 +111,20 @@ input:
   table: fact_match_features
 
 output:
+  root_dir: output/ml
   clusters_dir: output/ml/clusters
   metrics_dir: output/ml/metrics
   plots_dir: output/ml/plots
   report_dir: output/ml/report
+  legacy_projection:
+    enabled: true
   load_to_bigquery: false
   bq_table: ml_team_clusters
+
+stability:
+  # Enabled in the next tested iteration. Versioned immutable runs are the
+  # first milestone and remain useful independently of stability analysis.
+  enabled: false
 
 mlflow:
   enabled: false

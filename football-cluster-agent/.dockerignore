@@ -1,8 +1,8 @@
+.env
+.git
+.gitignore
+.pytest_cache
 .venv
 __pycache__
-.git
-.adk
-*.pyc
-*.pyo
-*.pyd
-.env
+*.py[cod]
+cost_guard

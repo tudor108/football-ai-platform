@@ -6,10 +6,16 @@ import os
 from typing import Any
 
 import pandas as pd
-from google.cloud import bigquery
+
+try:
+    from google.cloud import bigquery
+except ImportError:  # BigQuery is optional for local-only ML runs.
+    bigquery = None  # type: ignore[assignment]
 
 
 def get_team_features_from_bq(config: dict[str, Any]) -> pd.DataFrame:
+    if bigquery is None:
+        raise RuntimeError("google-cloud-bigquery is required for input.source=bigquery")
     project_id = os.environ["GCP_PROJECT_ID"]
     dataset = os.environ["BQ_DATASET"]
     table = config["input"].get("table", "fact_match_features")
@@ -23,6 +29,8 @@ def get_team_features_from_bq(config: dict[str, Any]) -> pd.DataFrame:
 
 
 def load_clusters_to_bq(clusters_path: str, config: dict[str, Any]) -> None:
+    if bigquery is None:
+        raise RuntimeError("google-cloud-bigquery is required when output.load_to_bigquery=true")
     project_id = os.environ["GCP_PROJECT_ID"]
     dataset = os.environ["BQ_DATASET"]
     table = config["output"].get("bq_table", "ml_team_clusters")

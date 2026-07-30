@@ -11,6 +11,13 @@ import pandas as pd
 from dotenv import load_dotenv
 from google.cloud import bigquery, storage
 
+from .analytics import (
+    CLUSTERING_FEATURES,
+    build_team_profiles_from_matches,
+    personalized_similarity,
+    predict_match_from_history,
+)
+
 load_dotenv()
 
 PROJECT_ID = os.getenv("GOOGLE_CLOUD_PROJECT", "")
@@ -146,6 +153,64 @@ def _read_clusters_df() -> pd.DataFrame:
     return pd.read_csv(io.StringIO(csv_text))
 
 
+def _read_match_features_df() -> pd.DataFrame:
+    """Read the completed match feature history used by personalized tools."""
+    sql = f"""
+    SELECT
+      fixture_id,
+      date,
+      league_id,
+      season,
+      home_team_id,
+      home_team_name,
+      away_team_id,
+      away_team_name,
+      goals_home,
+      goals_away,
+      status_short,
+      home_form_pts_lastN,
+      home_form_wins_lastN,
+      home_form_draws_lastN,
+      home_form_losses_lastN,
+      home_form_gf_avg_lastN,
+      home_form_ga_avg_lastN,
+      home_form_gd_avg_lastN,
+      away_form_pts_lastN,
+      away_form_wins_lastN,
+      away_form_draws_lastN,
+      away_form_losses_lastN,
+      away_form_gf_avg_lastN,
+      away_form_ga_avg_lastN,
+      away_form_gd_avg_lastN
+    FROM `{PROJECT_ID}.{BQ_DATASET}.fact_match_features`
+    WHERE goals_home IS NOT NULL
+      AND goals_away IS NOT NULL
+    """
+    rows = [
+        dict(row.items())
+        for row in _BQ.query(
+            sql,
+            job_config=bigquery.QueryJobConfig(
+                maximum_bytes_billed=5 * 10**9,
+                use_query_cache=True,
+            ),
+        ).result()
+    ]
+    if not rows:
+        raise ValueError("No completed matches found in fact_match_features.")
+    return pd.DataFrame(rows)
+
+
+def _read_personalization_profiles(clusters_df: pd.DataFrame) -> pd.DataFrame:
+    """Prefer self-contained cluster artifacts, with a BigQuery fallback."""
+    required_profile_columns = {"team_id", "team_name", *CLUSTERING_FEATURES}
+    if required_profile_columns.issubset(clusters_df.columns):
+        return clusters_df[
+            ["team_id", "team_name", *CLUSTERING_FEATURES]
+        ].copy()
+    return build_team_profiles_from_matches(_read_match_features_df())
+
+
 def query_bigquery(sql: str, max_rows: int = 500) -> list[dict[str, Any]]:
     if not _ALLOWED_SQL.search(sql or ""):
         raise ValueError("Only SELECT statements are allowed.")
@@ -256,3 +321,58 @@ def compare_teams(team_a: str, team_b: str) -> dict[str, Any]:
         "same_cluster": int(row_a["cluster"]) == int(row_b["cluster"]),
         "bigquery_standings_snapshot": standings,
     }
+
+
+def personalized_team_similarity(
+    team_name: str,
+    attack_preference: float = 0.0,
+    defense_preference: float = 0.0,
+    results_preference: float = 0.0,
+    recent_form_preference: float = 0.0,
+    consistency_preference: float = 0.0,
+    top_n: int = 5,
+) -> dict[str, Any]:
+    """Find similar and recommended teams through a user's personal lens.
+
+    Preference values must be between -1 and 1:
+    - positive means the user prefers more/stronger of that dimension;
+    - negative means the user prefers the opposite (for example, -1
+      consistency means a preference for volatile teams);
+    - zero means that dimension is neutral.
+
+    The magnitude also controls how much the dimension influences distance.
+    Similarity values are relative indexes and must never be called
+    probabilities.
+    """
+    clusters_df = _read_clusters_df()
+    profiles_df = _read_personalization_profiles(clusters_df)
+    return personalized_similarity(
+        profiles=profiles_df,
+        clusters=clusters_df,
+        team_name=team_name,
+        preferences={
+            "attack": attack_preference,
+            "defense": defense_preference,
+            "results": results_preference,
+            "recent_form": recent_form_preference,
+            "consistency": consistency_preference,
+        },
+        top_n=top_n,
+    )
+
+
+def predict_match_from_stats(
+    home_team: str,
+    away_team: str,
+) -> dict[str, Any]:
+    """Produce an explainable, uncalibrated statistical match forecast.
+
+    The tool uses historical home/away scoring rates, Bayesian smoothing,
+    recent form, and an independent Poisson goals baseline. Results are not
+    guarantees and do not include lineups, injuries, suspensions, or odds.
+    """
+    return predict_match_from_history(
+        matches=_read_match_features_df(),
+        home_team=home_team,
+        away_team=away_team,
+    )

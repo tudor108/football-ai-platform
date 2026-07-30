@@ -1,6 +1,7 @@
 pandas
 google-cloud-bigquery
 scikit-learn
+scipy
 matplotlib
 seaborn
 mlflow

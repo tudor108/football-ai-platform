@@ -23,3 +23,15 @@ def validate_config(config: dict[str, Any]) -> None:
     allowed_sources = {"local_derived", "bigquery", "csv"}
     if input_source not in allowed_sources:
         raise ValueError(f"Unsupported input.source `{input_source}`. Allowed: {sorted(allowed_sources)}")
+
+    output_root = config["output"].get("root_dir", "output/ml")
+    if not isinstance(output_root, str) or not output_root.strip():
+        raise ValueError("`output.root_dir` must be a non-empty path string")
+
+    legacy = config["output"].get("legacy_projection", {"enabled": True})
+    if not isinstance(legacy, dict) or not isinstance(legacy.get("enabled", True), bool):
+        raise ValueError("`output.legacy_projection.enabled` must be boolean")
+
+    stability = config.get("stability", {"enabled": False})
+    if not isinstance(stability, dict) or not isinstance(stability.get("enabled", False), bool):
+        raise ValueError("`stability.enabled` must be boolean")

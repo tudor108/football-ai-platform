@@ -2,13 +2,23 @@
 
 from __future__ import annotations
 
-import os
+from pathlib import Path
 from typing import Any
 
-import mlflow
+try:
+    import mlflow
+except ImportError:  # MLflow is optional when tracking is disabled.
+    mlflow = None  # type: ignore[assignment]
 
 
-def mlflow_run(config: dict[str, Any], best: dict[str, Any], metrics: dict[str, Any]) -> None:
+def mlflow_run(
+    config: dict[str, Any],
+    best: dict[str, Any],
+    metrics: dict[str, Any],
+    artifact_paths: dict[str, Path],
+) -> None:
+    if mlflow is None:
+        raise RuntimeError("mlflow is required when mlflow.enabled=true")
     experiment = config.get("mlflow", {}).get("experiment", "team_clustering")
     mlflow.set_experiment(experiment)
 
@@ -26,19 +36,11 @@ def mlflow_run(config: dict[str, Any], best: dict[str, Any], metrics: dict[str, 
             if value is not None:
                 mlflow.log_metric(key, float(value))
 
-        clusters_path = os.path.join(config["output"]["clusters_dir"], "clusters.csv")
-        metrics_path = os.path.join(config["output"]["metrics_dir"], "metrics.json")
-        interpretation_path = os.path.join(config["output"]["metrics_dir"], "cluster_interpretation.json")
-        for artifact in (clusters_path, metrics_path, interpretation_path):
-            if os.path.exists(artifact):
-                mlflow.log_artifact(artifact)
-
-        plots_dir = config["output"]["plots_dir"]
-        for plot_name in ("pca_scatter.png", "cluster_sizes.png"):
-            plot_path = os.path.join(plots_dir, plot_name)
-            if os.path.exists(plot_path):
-                mlflow.log_artifact(plot_path)
+        for artifact in artifact_paths.values():
+            path = Path(artifact)
+            if path.is_file():
+                mlflow.log_artifact(str(path))
 
         config_path = config.get("config_path")
-        if config_path and os.path.exists(config_path):
-            mlflow.log_artifact(config_path)
+        if config_path and Path(config_path).is_file():
+            mlflow.log_artifact(str(config_path))
