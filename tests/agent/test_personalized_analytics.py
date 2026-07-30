@@ -16,6 +16,7 @@ if str(AGENT_ROOT) not in sys.path:
 from football_agent.analytics import (  # noqa: E402
     personalized_similarity,
     predict_match_from_history,
+    summarize_latest_matches,
 )
 
 
@@ -157,3 +158,48 @@ def test_poisson_forecast_rejects_unknown_team() -> None:
             home_team="Unknown FC",
             away_team="Beta",
         )
+
+
+def test_latest_match_summary_reports_coverage_and_staleness() -> None:
+    matches = pd.DataFrame(
+        [
+            {
+                "fixture_id": 1,
+                "date": "2025-05-01T19:00:00+00:00",
+                "league_id": 140,
+                "season": 2024,
+                "home_team_name": "Alpha",
+                "away_team_name": "Beta",
+                "goals_home": 2,
+                "goals_away": 1,
+                "status_short": "FT",
+                "home_form_pts_lastN": 10,
+            },
+            {
+                "fixture_id": 2,
+                "date": "2025-05-10T17:00:00+00:00",
+                "league_id": 140,
+                "season": 2024,
+                "home_team_name": "Gamma",
+                "away_team_name": "Alpha",
+                "goals_home": 0,
+                "goals_away": 3,
+                "status_short": "FT",
+                "home_form_pts_lastN": 7,
+            },
+        ]
+    )
+
+    result = summarize_latest_matches(
+        matches,
+        limit=1,
+        as_of=datetime(2025, 5, 20, 17, tzinfo=timezone.utc),
+    )
+
+    assert result["source_table"] == "fact_match_features"
+    assert result["coverage"]["completed_match_count"] == 2
+    assert result["coverage"]["latest_match_utc"].startswith("2025-05-10")
+    assert result["coverage"]["data_age_days"] == 10
+    assert result["latest_matches"][0]["fixture_id"] == 2
+    assert "home_form_pts_lastN" in result["available_match_statistics"]
+    assert "live data" in result["warning"]

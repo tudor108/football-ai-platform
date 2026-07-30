@@ -16,6 +16,7 @@ from .analytics import (
     build_team_profiles_from_matches,
     personalized_similarity,
     predict_match_from_history,
+    summarize_latest_matches,
 )
 
 load_dotenv()
@@ -212,6 +213,12 @@ def _read_personalization_profiles(clusters_df: pd.DataFrame) -> pd.DataFrame:
 
 
 def query_bigquery(sql: str, max_rows: int = 500) -> list[dict[str, Any]]:
+    """Run a read-only query against a known project table.
+
+    Known match tables are `fact_match_features` and `fact_matches`; there is
+    no table named `matches`. Prefer get_latest_available_matches for questions
+    about the newest available match data.
+    """
     if not _ALLOWED_SQL.search(sql or ""):
         raise ValueError("Only SELECT statements are allowed.")
     if _FORBIDDEN_SQL.search(sql):
@@ -240,6 +247,19 @@ def query_bigquery(sql: str, max_rows: int = 500) -> list[dict[str, Any]]:
             break
         output.append(dict(row.items()))
     return output
+
+
+def get_latest_available_matches(limit: int = 10) -> dict[str, Any]:
+    """Show data coverage, available statistics, and newest completed matches.
+
+    Use this tool for questions such as "what is your newest data?", "when were
+    the latest matches?", or "what recent match statistics do you have?".
+    The result describes the latest data stored in BigQuery, not live scores.
+
+    Args:
+        limit: Number of newest completed matches to return, from 1 to 50.
+    """
+    return summarize_latest_matches(_read_match_features_df(), limit=limit)
 
 
 def explain_cluster(cluster_id: int) -> dict[str, Any]:

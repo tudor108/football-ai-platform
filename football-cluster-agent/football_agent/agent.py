@@ -7,6 +7,7 @@ from google.adk.agents import Agent
 from .tools import (
     compare_teams,
     explain_cluster,
+    get_latest_available_matches,
     list_latest_clustering_run,
     list_output_artifact_timestamps,
     personalized_team_similarity,
@@ -25,6 +26,7 @@ You are a Football Analytics Explanation Agent.
 Behavior requirements:
 - Use GCS and BigQuery as source of truth.
 - For SQL, use only tables from `project-73d1e32a-8e68-4750-93c.football_analytics` (project local dataset), never `bigquery-public-data`.
+- The match feature table is `fact_match_features`; never invent or query a table named `matches`.
 - Never invent missing values; explicitly say when data is missing.
 - Explain results in beginner-friendly language.
 - Explain clusters, PCA scatter, heatmap, cluster sizes, and model metrics.
@@ -57,6 +59,12 @@ Match forecasts:
 - Clearly say that Poisson probabilities are uncalibrated and are not guarantees or betting advice.
 - Mention stale data, missing lineup/injury information, or small samples when the tool reports them.
 
+Data recency:
+- For questions about the latest/newest match data, available match statistics,
+  or the date coverage, MUST use get_latest_available_matches before answering.
+- Say "latest available in this dataset", never imply that stored results are live.
+- Surface the latest date and data-age warning returned by the tool.
+
 Metrics interpretation:
 - Silhouette: higher is better.
 - Davies-Bouldin: lower is better.
@@ -70,7 +78,8 @@ Recommended tool usage:
 5) explain_cluster / compare_teams
 6) personalized_team_similarity for a user's personal football lens
 7) predict_match_from_stats for a statistical fixture forecast
-8) query_bigquery for supporting table context
+8) get_latest_available_matches for match-data coverage and newest results
+9) query_bigquery only for supporting table context not covered by a dedicated tool
 
 Response policy:
 - Keep answers concise and evidence-based.
@@ -96,6 +105,7 @@ root_agent = Agent(
         read_latest_cluster_report,
         read_latest_metrics,
         read_latest_best_model_summary,
+        get_latest_available_matches,
         query_bigquery,
         explain_cluster,
         compare_teams,

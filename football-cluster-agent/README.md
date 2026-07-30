@@ -42,6 +42,7 @@ Then load this agent and ask:
 - I like attacking, in-form teams. Which clubs are most similar to Barcelona
   through that lens?
 - Give me a statistical forecast for Barcelona at home against Real Madrid.
+- What are the latest completed matches and newest date available in the data?
 
 ## Tools exposed
 - `list_latest_clustering_run()`
@@ -50,6 +51,7 @@ Then load this agent and ask:
 - `read_latest_cluster_report()`
 - `read_latest_metrics()`
 - `read_latest_best_model_summary()`
+- `get_latest_available_matches(limit)`
 - `query_bigquery(sql)` (SELECT-only safety)
 - `explain_cluster(cluster_id)`
 - `compare_teams(team_a, team_b)`

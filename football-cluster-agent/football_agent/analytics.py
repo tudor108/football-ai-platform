@@ -9,6 +9,7 @@ from __future__ import annotations
 import math
 import unicodedata
 from collections.abc import Mapping
+from datetime import datetime, timezone
 from typing import Any
 
 import pandas as pd
@@ -82,6 +83,125 @@ def _numeric_or_nan(frame: pd.DataFrame, column: str) -> pd.Series:
     if column not in frame.columns:
         return pd.Series(float("nan"), index=frame.index, dtype=float)
     return pd.to_numeric(frame[column], errors="coerce")
+
+
+def summarize_latest_matches(
+    matches: pd.DataFrame,
+    limit: int = 10,
+    as_of: datetime | None = None,
+) -> dict[str, Any]:
+    """Return JSON-safe coverage metadata and the newest completed matches."""
+    required = {
+        "fixture_id",
+        "date",
+        "home_team_name",
+        "away_team_name",
+        "goals_home",
+        "goals_away",
+    }
+    missing = required - set(matches.columns)
+    if missing:
+        raise ValueError(f"Match data is missing required columns: {sorted(missing)}")
+
+    safe_limit = max(1, min(int(limit), 50))
+    frame = matches.copy()
+    frame["date_dt"] = pd.to_datetime(frame["date"], errors="coerce", utc=True)
+    frame["goals_home"] = pd.to_numeric(frame["goals_home"], errors="coerce")
+    frame["goals_away"] = pd.to_numeric(frame["goals_away"], errors="coerce")
+    frame = frame.dropna(
+        subset=["date_dt", "goals_home", "goals_away"]
+    ).sort_values("date_dt", ascending=False)
+    if frame.empty:
+        raise ValueError("No completed matches with valid dates and scores are available.")
+
+    latest_date = frame["date_dt"].max()
+    earliest_date = frame["date_dt"].min()
+    reference_time = as_of or datetime.now(timezone.utc)
+    if reference_time.tzinfo is None:
+        reference_time = reference_time.replace(tzinfo=timezone.utc)
+    age_days = max(
+        0,
+        int(
+            (
+                reference_time.astimezone(timezone.utc)
+                - latest_date.to_pydatetime()
+            ).total_seconds()
+            // 86400
+        ),
+    )
+
+    recent_form_fields = [
+        column
+        for column in (
+            "home_form_pts_lastN",
+            "home_form_wins_lastN",
+            "home_form_draws_lastN",
+            "home_form_losses_lastN",
+            "home_form_gf_avg_lastN",
+            "home_form_ga_avg_lastN",
+            "home_form_gd_avg_lastN",
+            "away_form_pts_lastN",
+            "away_form_wins_lastN",
+            "away_form_draws_lastN",
+            "away_form_losses_lastN",
+            "away_form_gf_avg_lastN",
+            "away_form_ga_avg_lastN",
+            "away_form_gd_avg_lastN",
+        )
+        if column in frame.columns
+    ]
+
+    latest_matches: list[dict[str, Any]] = []
+    for _, row in frame.head(safe_limit).iterrows():
+        latest_matches.append(
+            {
+                "fixture_id": _plain_scalar(row["fixture_id"]),
+                "match_date_utc": row["date_dt"].isoformat(),
+                "home_team": str(row["home_team_name"]),
+                "away_team": str(row["away_team_name"]),
+                "home_goals": _plain_scalar(row["goals_home"]),
+                "away_goals": _plain_scalar(row["goals_away"]),
+                "league_id": _plain_scalar(row.get("league_id")),
+                "season": _plain_scalar(row.get("season")),
+                "status": _plain_scalar(row.get("status_short")),
+            }
+        )
+
+    return {
+        "source_table": "fact_match_features",
+        "coverage": {
+            "completed_match_count": int(len(frame)),
+            "earliest_match_utc": earliest_date.isoformat(),
+            "latest_match_utc": latest_date.isoformat(),
+            "data_age_days": age_days,
+            "seasons": sorted(
+                {
+                    _plain_scalar(value)
+                    for value in frame.get("season", pd.Series(dtype=object)).dropna()
+                },
+                key=str,
+            ),
+            "league_ids": sorted(
+                {
+                    _plain_scalar(value)
+                    for value in frame.get("league_id", pd.Series(dtype=object)).dropna()
+                },
+                key=str,
+            ),
+        },
+        "available_match_statistics": [
+            "home and away teams",
+            "final score",
+            "league",
+            "season",
+            *recent_form_fields,
+        ],
+        "latest_matches": latest_matches,
+        "warning": (
+            f"The newest completed match is {age_days} days old; describe the data "
+            "as the latest available in this dataset, not as live data."
+        ),
+    }
 
 
 def build_team_profiles_from_matches(matches: pd.DataFrame) -> pd.DataFrame:
