@@ -1,0 +1,64 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: football-business-api
+  namespace: football-analytics
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: football-business-api
+  template:
+    metadata:
+      labels:
+        app: football-business-api
+    spec:
+      serviceAccountName: football-agent
+      securityContext:
+        runAsNonRoot: true
+        seccompProfile:
+          type: RuntimeDefault
+      containers:
+        - name: api
+          image: europe-central2-docker.pkg.dev/project-73d1e32a-8e68-4750-93c/football-analytics/business-api:latest
+          ports:
+            - name: http
+              containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: football-config
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: http
+            initialDelaySeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: http
+            initialDelaySeconds: 30
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: "1"
+              memory: 1Gi
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop: ["ALL"]
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: football-business-api
+  namespace: football-analytics
+spec:
+  type: ClusterIP
+  selector:
+    app: football-business-api
+  ports:
+    - name: http
+      port: 80
+      targetPort: http

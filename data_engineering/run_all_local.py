@@ -12,6 +12,7 @@ Idempotent: skip-existing logic prevents duplicate work.
 
 from __future__ import annotations
 
+import os
 from pathlib import Path
 import sys
 
@@ -33,6 +34,7 @@ from data_engineering import derive_tables_local, load_to_bigquery, transform_da
 from ml.clustering.team_clustering_pipeline import main as run_team_clustering
 from ml.utils.pipeline_result import PipelineResult
 from ml.utils.run_context import SUCCEEDED
+from business.agent_search_cloud import import_documents_from_gcs
 
 
 def step(title: str) -> None:
@@ -114,6 +116,41 @@ def main() -> None:
                 f"verified={upload_result.verified}"
             )
             print(f"[INFO] Remote latest_run.json now points to {ml_result.run_id}")
+            data_store_id = os.getenv("AGENT_SEARCH_DATA_STORE_ID", "").strip()
+            if data_store_id:
+                project_id = (
+                    os.getenv("GCP_PROJECT_ID", "").strip()
+                    or os.getenv("GOOGLE_CLOUD_PROJECT", "").strip()
+                )
+                bucket = os.getenv("GCS_BUCKET", "").strip() or os.getenv(
+                    "CLUSTER_BUCKET", ""
+                ).strip()
+                location = os.getenv("AGENT_SEARCH_LOCATION", "global").strip()
+                try:
+                    search_import = import_documents_from_gcs(
+                        project_id=project_id,
+                        data_store_id=data_store_id,
+                        gcs_uri=(
+                            f"gs://{bucket}/output/ml/runs/{ml_result.run_id}/"
+                            "search/agent_search_documents.jsonl"
+                        ),
+                        location=location,
+                        wait=False,
+                    )
+                    print(
+                        "[INFO] Agent Search incremental import started: "
+                        f"{search_import.operation_name}"
+                    )
+                except Exception as error:  # noqa: BLE001
+                    print(
+                        "[WARN] Completed run remains published, but optional "
+                        f"Agent Search indexing was skipped/failed: {error}"
+                    )
+            else:
+                print(
+                    "[INFO] AGENT_SEARCH_DATA_STORE_ID is unset; semantic history "
+                    "indexing skipped."
+                )
         except Exception as error:  # noqa: BLE001
             print(
                 "[ERROR] Versioned ML publication failed; remote latest pointer "

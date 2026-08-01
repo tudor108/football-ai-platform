@@ -1,0 +1,4 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args: ["build", "-f", "football-cluster-agent/Dockerfile.api", "-t", "${_IMAGE}", "football-cluster-agent"]
+images: ["${_IMAGE}"]

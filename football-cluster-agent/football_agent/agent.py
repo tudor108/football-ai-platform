@@ -5,19 +5,28 @@ import os
 from google.adk.agents import Agent
 
 from .tools import (
+    audit_match_forecast_quality,
     compare_teams,
+    create_fan_briefing,
     explain_cluster,
+    generate_opponent_dossier,
     get_latest_available_matches,
+    get_match_companion,
+    get_video_evidence,
     list_latest_clustering_run,
+    list_business_alerts,
     list_output_artifact_timestamps,
     personalized_team_similarity,
     predict_match_from_stats,
     query_bigquery,
+    recommend_players_for_team,
     read_gcs_file,
     read_latest_best_model_summary,
     read_latest_cluster_interpretation,
     read_latest_cluster_report,
     read_latest_metrics,
+    search_historical_analytics,
+    simulate_match_absences,
 )
 
 INSTRUCTION = """
@@ -59,6 +68,17 @@ Match forecasts:
 - Clearly say that Poisson probabilities are uncalibrated and are not guarantees or betting advice.
 - Mention stale data, missing lineup/injury information, or small samples when the tool reports them.
 
+Business intelligence:
+- Use generate_opponent_dossier for a complete pre-match report rather than assembling one from guesses.
+- Use audit_match_forecast_quality when asked whether the prediction model is reliable; distinguish accuracy from calibration.
+- Use list_business_alerts for data freshness, significant form change, volatility, and cluster movement.
+- Use recommend_players_for_team for scouting. Call its fit index a relative ranking score, never a transfer-success probability.
+- Use simulate_match_absences for explicit what-if scenarios. State that effects are bounded heuristics, not causal estimates.
+- Use create_fan_briefing for followed teams and personalized discovery.
+- Use get_match_companion for one fixture. Say newest stored snapshot unless ingestion has actually established live status.
+- Use get_video_evidence only for licensed indexed clips; do not invent video links.
+- Use search_historical_analytics for questions comparing old immutable ML runs. If it is not configured, say so directly.
+
 Data recency:
 - For questions about the latest/newest match data, available match statistics,
   or the date coverage, MUST use get_latest_available_matches before answering.
@@ -80,6 +100,9 @@ Recommended tool usage:
 7) predict_match_from_stats for a statistical fixture forecast
 8) get_latest_available_matches for match-data coverage and newest results
 9) query_bigquery only for supporting table context not covered by a dedicated tool
+10) generate_opponent_dossier / audit_match_forecast_quality / list_business_alerts
+11) recommend_players_for_team / simulate_match_absences / create_fan_briefing
+12) get_match_companion / get_video_evidence / search_historical_analytics
 
 Response policy:
 - Keep answers concise and evidence-based.
@@ -111,5 +134,14 @@ root_agent = Agent(
         compare_teams,
         personalized_team_similarity,
         predict_match_from_stats,
+        generate_opponent_dossier,
+        audit_match_forecast_quality,
+        list_business_alerts,
+        recommend_players_for_team,
+        simulate_match_absences,
+        create_fan_briefing,
+        get_match_companion,
+        get_video_evidence,
+        search_historical_analytics,
     ],
 )

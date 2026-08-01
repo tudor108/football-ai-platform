@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: football-config
+  namespace: football-analytics
+data:
+  GOOGLE_CLOUD_PROJECT: project-73d1e32a-8e68-4750-93c
+  GCP_PROJECT_ID: project-73d1e32a-8e68-4750-93c
+  GCP_LOCATION: europe-central2
+  BQ_LOCATION: europe-central2
+  BQ_DATASET: football_analytics
+  GCS_BUCKET: football-ai-raw-data-tudor
+  CLUSTER_BUCKET: football-ai-raw-data-tudor
+  CLUSTER_OUTPUT_PREFIX: output/ml
+  AGENT_SEARCH_LOCATION: global
+  AGENT_SEARCH_DATA_STORE_ID: football-analytics-history
+  AGENT_SEARCH_ENGINE_ID: football-analytics-search

@@ -57,6 +57,15 @@ Then load this agent and ask:
 - `compare_teams(team_a, team_b)`
 - `personalized_team_similarity(...)`
 - `predict_match_from_stats(home_team, away_team)`
+- `generate_opponent_dossier(home_team, away_team)`
+- `audit_match_forecast_quality(max_evaluated)`
+- `list_business_alerts()`
+- `recommend_players_for_team(...)`
+- `simulate_match_absences(...)`
+- `create_fan_briefing(...)`
+- `get_match_companion(fixture_id)`
+- `get_video_evidence(fixture_id)`
+- `search_historical_analytics(...)`
 
 ## Personalized similarity
 
@@ -82,7 +91,21 @@ scores, data recency, confidence, and explicit limitations. It does not use
 confirmed lineups, injuries, suspensions, bookmaker odds, or tactical matchup
 data.
 
-## Cloud Run deployment (later)
+## Business API
+
+The same deterministic tools are available as a white-label FastAPI service:
+
+```bash
+uvicorn business_api.main:app --host 0.0.0.0 --port 8081
+```
+
+Interactive OpenAPI documentation is at `/docs`.
+
+## Cloud Run deployment
+
+Live service (revision `football-agent-00009-zz7`):
+`https://football-agent-hzdooca3ia-uc.a.run.app/dev-ui/`
+
 1. Build container image.
 2. Deploy Cloud Run service with `football-agent-sa`.
 3. Set env vars listed above.
@@ -90,3 +113,4 @@ data.
    - BigQuery Data Viewer + Job User
    - Storage Object Viewer
    - Vertex AI User
+   - Discovery Engine Viewer (for historical Agent Search)

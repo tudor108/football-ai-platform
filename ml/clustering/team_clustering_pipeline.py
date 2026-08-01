@@ -12,6 +12,10 @@ from typing import Any
 import pandas as pd
 import yaml
 
+from business.agent_search_documents import (
+    build_agent_search_documents,
+    write_agent_search_documents,
+)
 from ml.clustering.algorithms import run_clustering_algorithms
 from ml.clustering.evaluation import evaluate_clustering_results
 from ml.clustering.interpretation import interpret_clusters
@@ -296,6 +300,16 @@ def main(config_path: str, smoke: bool = False) -> PipelineResult:
         }
         atomic_write_json(summary_path, best_summary)
         write_cluster_report(report_path, best_summary, metrics, interpretations)
+        search_documents_path = context.run_dir / "search" / "agent_search_documents.jsonl"
+        search_documents = build_agent_search_documents(
+            run_id=context.run_id,
+            clusters=best_labels,
+            interpretations=interpretations,
+            metrics=metrics,
+            best_model=best_summary,
+            run_metadata=input_metadata,
+        )
+        write_agent_search_documents(search_documents_path, search_documents)
         artifacts.update(
             {
                 "clusters": clusters_path,
@@ -303,6 +317,7 @@ def main(config_path: str, smoke: bool = False) -> PipelineResult:
                 "cluster_interpretation": interpretation_path,
                 "best_model_summary": summary_path,
                 "cluster_report": report_path,
+                "agent_search_documents": search_documents_path,
             }
         )
         for plot_path in Path(config["output"]["plots_dir"]).glob("*.png"):

@@ -19,6 +19,8 @@ jobs:
       API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
       GCS_BUCKET: ${{ secrets.GCS_BUCKET }}
       GCP_PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
+      AGENT_SEARCH_DATA_STORE_ID: football-analytics-history
+      AGENT_SEARCH_LOCATION: global
 
     steps:
       - name: Checkout repository

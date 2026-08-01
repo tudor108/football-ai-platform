@@ -18,6 +18,17 @@ from .analytics import (
     predict_match_from_history,
     summarize_latest_matches,
 )
+from .agent_search import search_historical_analytics
+from .intelligence import (
+    attach_video_evidence,
+    backtest_match_forecasts,
+    build_live_match_companion,
+    build_opponent_dossier,
+    build_personalized_fan_briefing,
+    generate_business_alerts,
+    rank_player_team_fit,
+    simulate_lineup_absences,
+)
 
 load_dotenv()
 
@@ -199,6 +210,33 @@ def _read_match_features_df() -> pd.DataFrame:
     ]
     if not rows:
         raise ValueError("No completed matches found in fact_match_features.")
+    return pd.DataFrame(rows)
+
+
+_BUSINESS_TABLES = {
+    "fact_matches",
+    "fact_match_events",
+    "fact_match_team_stats",
+    "fact_match_player_stats",
+    "fact_top_scorers",
+}
+
+
+def _read_business_table(table_name: str) -> pd.DataFrame:
+    """Read one fixed, allow-listed analytics table for a dedicated tool."""
+    if table_name not in _BUSINESS_TABLES:
+        raise ValueError(f"Unsupported business table: {table_name}")
+    sql = f"SELECT * FROM `{PROJECT_ID}.{BQ_DATASET}.{table_name}`"
+    rows = [
+        dict(row.items())
+        for row in _BQ.query(
+            sql,
+            job_config=bigquery.QueryJobConfig(
+                maximum_bytes_billed=5 * 10**9,
+                use_query_cache=True,
+            ),
+        ).result()
+    ]
     return pd.DataFrame(rows)
 
 
@@ -395,4 +433,118 @@ def predict_match_from_stats(
         matches=_read_match_features_df(),
         home_team=home_team,
         away_team=away_team,
+    )
+
+
+def generate_opponent_dossier(home_team: str, away_team: str) -> dict[str, Any]:
+    """Create a pre-match dossier with form, clusters, key players and forecast."""
+    return build_opponent_dossier(
+        matches=_read_match_features_df(),
+        clusters=_read_clusters_df(),
+        home_team=home_team,
+        away_team=away_team,
+        team_stats=_read_business_table("fact_match_team_stats"),
+        top_scorers=_read_business_table("fact_top_scorers"),
+    )
+
+
+def audit_match_forecast_quality(max_evaluated: int = 200) -> dict[str, Any]:
+    """Walk-forward audit the stored Poisson forecast without future leakage."""
+    return backtest_match_forecasts(
+        matches=_read_match_features_df(),
+        max_evaluated=max(20, min(int(max_evaluated), 500)),
+    )
+
+
+def list_business_alerts() -> dict[str, Any]:
+    """List current data freshness, form and volatility alerts."""
+    return generate_business_alerts(
+        matches=_read_match_features_df(),
+        clusters=_read_clusters_df(),
+    )
+
+
+def recommend_players_for_team(
+    team_name: str,
+    position: str = "",
+    attack_preference: float = 0.0,
+    defense_preference: float = 0.0,
+    creation_preference: float = 0.0,
+    reliability_preference: float = 0.0,
+    min_minutes: float = 180.0,
+    top_n: int = 10,
+) -> dict[str, Any]:
+    """Rank external players by a transparent relative fit index, not probability."""
+    return rank_player_team_fit(
+        player_stats=_read_business_table("fact_match_player_stats"),
+        clusters=_read_clusters_df(),
+        team_name=team_name,
+        position=position,
+        attack_preference=attack_preference,
+        defense_preference=defense_preference,
+        creation_preference=creation_preference,
+        reliability_preference=reliability_preference,
+        min_minutes=min_minutes,
+        top_n=top_n,
+    )
+
+
+def simulate_match_absences(
+    home_team: str,
+    away_team: str,
+    missing_home_players: list[str] | None = None,
+    missing_away_players: list[str] | None = None,
+) -> dict[str, Any]:
+    """Compare the baseline forecast with a bounded player-absence scenario."""
+    return simulate_lineup_absences(
+        matches=_read_match_features_df(),
+        player_stats=_read_business_table("fact_match_player_stats"),
+        home_team=home_team,
+        away_team=away_team,
+        missing_home_players=missing_home_players or [],
+        missing_away_players=missing_away_players or [],
+    )
+
+
+def create_fan_briefing(
+    followed_teams: list[str],
+    attack_preference: float = 0.0,
+    defense_preference: float = 0.0,
+    results_preference: float = 0.0,
+    recent_form_preference: float = 0.0,
+    consistency_preference: float = 0.0,
+) -> dict[str, Any]:
+    """Create a stored-data briefing for followed teams and the user's lens."""
+    return build_personalized_fan_briefing(
+        matches=_read_business_table("fact_matches"),
+        clusters=_read_clusters_df(),
+        top_scorers=_read_business_table("fact_top_scorers"),
+        followed_teams=followed_teams,
+        preferences={
+            "attack": attack_preference,
+            "defense": defense_preference,
+            "results": results_preference,
+            "recent_form": recent_form_preference,
+            "consistency": consistency_preference,
+        },
+    )
+
+
+def get_match_companion(fixture_id: int) -> dict[str, Any]:
+    """Summarize the newest stored events and statistics for a fixture."""
+    return build_live_match_companion(
+        fixtures=_read_business_table("fact_matches"),
+        events=_read_business_table("fact_match_events"),
+        team_stats=_read_business_table("fact_match_team_stats"),
+        player_stats=_read_business_table("fact_match_player_stats"),
+        fixture_id=fixture_id,
+    )
+
+
+def get_video_evidence(fixture_id: int) -> dict[str, Any]:
+    """Return licensed clip links when a video index exists; currently the schema contract."""
+    return attach_video_evidence(
+        events=_read_business_table("fact_match_events"),
+        fixture_id=fixture_id,
+        video_index=None,
     )

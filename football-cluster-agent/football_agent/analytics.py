@@ -595,6 +595,79 @@ def _poisson_probabilities(expected_goals: float, max_goals: int) -> list[float]
     ]
 
 
+def poisson_outcome_summary(
+    expected_home: float,
+    expected_away: float,
+    max_goals: int = 8,
+) -> dict[str, Any]:
+    """Convert expected goals into normalized, uncalibrated match markets."""
+    if expected_home < 0 or expected_away < 0:
+        raise ValueError("Expected goals cannot be negative.")
+    if max_goals < 3:
+        raise ValueError("max_goals must be at least 3.")
+
+    home_goal_probabilities = _poisson_probabilities(expected_home, max_goals)
+    away_goal_probabilities = _poisson_probabilities(expected_away, max_goals)
+    score_probabilities = [
+        (home_goals, away_goals, home_probability * away_probability)
+        for home_goals, home_probability in enumerate(home_goal_probabilities)
+        for away_goals, away_probability in enumerate(away_goal_probabilities)
+    ]
+    probability_mass = sum(probability for _, _, probability in score_probabilities)
+    if probability_mass <= 0:
+        raise ValueError("Poisson score grid has no usable probability mass.")
+    normalized_scores = [
+        (home_goals, away_goals, probability / probability_mass)
+        for home_goals, away_goals, probability in score_probabilities
+    ]
+    home_win = sum(
+        probability
+        for home_goals, away_goals, probability in normalized_scores
+        if home_goals > away_goals
+    )
+    draw = sum(
+        probability
+        for home_goals, away_goals, probability in normalized_scores
+        if home_goals == away_goals
+    )
+    away_win = sum(
+        probability
+        for home_goals, away_goals, probability in normalized_scores
+        if home_goals < away_goals
+    )
+    over_2_5 = sum(
+        probability
+        for home_goals, away_goals, probability in normalized_scores
+        if home_goals + away_goals >= 3
+    )
+    both_score = sum(
+        probability
+        for home_goals, away_goals, probability in normalized_scores
+        if home_goals >= 1 and away_goals >= 1
+    )
+    likely_scores = sorted(
+        normalized_scores, key=lambda item: item[2], reverse=True
+    )[:3]
+    return {
+        "outcome_probabilities": {
+            "home_win": round(home_win, 4),
+            "draw": round(draw, 4),
+            "away_win": round(away_win, 4),
+        },
+        "goal_market_probabilities": {
+            "over_2_5": round(over_2_5, 4),
+            "both_teams_to_score": round(both_score, 4),
+        },
+        "most_likely_scores": [
+            {
+                "score": f"{home_goals}-{away_goals}",
+                "probability": round(probability, 4),
+            }
+            for home_goals, away_goals, probability in likely_scores
+        ],
+    }
+
+
 def predict_match_from_history(
     matches: pd.DataFrame,
     home_team: str,
@@ -703,47 +776,7 @@ def predict_match_from_history(
     expected_home = max(0.15, min(4.0, expected_home))
     expected_away = max(0.15, min(4.0, expected_away))
 
-    home_goal_probabilities = _poisson_probabilities(expected_home, max_goals)
-    away_goal_probabilities = _poisson_probabilities(expected_away, max_goals)
-    score_probabilities: list[tuple[int, int, float]] = []
-    for home_goals, home_probability in enumerate(home_goal_probabilities):
-        for away_goals, away_probability in enumerate(away_goal_probabilities):
-            score_probabilities.append(
-                (home_goals, away_goals, home_probability * away_probability)
-            )
-    probability_mass = sum(probability for _, _, probability in score_probabilities)
-    normalized_scores = [
-        (home_goals, away_goals, probability / probability_mass)
-        for home_goals, away_goals, probability in score_probabilities
-    ]
-    home_win = sum(
-        probability
-        for home_goals, away_goals, probability in normalized_scores
-        if home_goals > away_goals
-    )
-    draw = sum(
-        probability
-        for home_goals, away_goals, probability in normalized_scores
-        if home_goals == away_goals
-    )
-    away_win = sum(
-        probability
-        for home_goals, away_goals, probability in normalized_scores
-        if home_goals < away_goals
-    )
-    over_2_5 = sum(
-        probability
-        for home_goals, away_goals, probability in normalized_scores
-        if home_goals + away_goals >= 3
-    )
-    both_score = sum(
-        probability
-        for home_goals, away_goals, probability in normalized_scores
-        if home_goals >= 1 and away_goals >= 1
-    )
-    likely_scores = sorted(
-        normalized_scores, key=lambda item: item[2], reverse=True
-    )[:3]
+    markets = poisson_outcome_summary(expected_home, expected_away, max_goals)
 
     latest_match = context_matches["date_dt"].max()
     age_days = int((pd.Timestamp.now(tz="UTC") - latest_match).days)
@@ -775,22 +808,7 @@ def predict_match_from_history(
             "home": round(expected_home, 2),
             "away": round(expected_away, 2),
         },
-        "outcome_probabilities": {
-            "home_win": round(home_win, 4),
-            "draw": round(draw, 4),
-            "away_win": round(away_win, 4),
-        },
-        "goal_market_probabilities": {
-            "over_2_5": round(over_2_5, 4),
-            "both_teams_to_score": round(both_score, 4),
-        },
-        "most_likely_scores": [
-            {
-                "score": f"{home_goals}-{away_goals}",
-                "probability": round(probability, 4),
-            }
-            for home_goals, away_goals, probability in likely_scores
-        ],
+        **markets,
         "evidence": {
             "league_home_goals_average": round(league_home_average, 3),
             "league_away_goals_average": round(league_away_average, 3),

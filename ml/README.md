@@ -50,13 +50,18 @@ Best model is selected via `comparison.select_by`:
 - `calinski_harabasz`
 
 ## Outputs
-All artifacts are written under `output/ml/`:
+Each successful run is immutable under `output/ml/runs/<run_id>/`; the flat
+paths remain as temporary backward-compatible copies:
 - `output/ml/clusters/clusters.csv`
 - `output/ml/metrics/metrics.json`
 - `output/ml/metrics/best_model_summary.json`
 - `output/ml/metrics/cluster_interpretation.json`
 - `output/ml/plots/pca_scatter.png`
 - `output/ml/plots/cluster_sizes.png`
+- `output/ml/search/agent_search_documents.jsonl`
+
+`output/ml/latest_run.json` advances only after required artifacts validate and
+the run status is `SUCCEEDED`.
 
 ## Local Run (Recommended First)
 ```bash
