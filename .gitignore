@@ -20,7 +20,11 @@ football-cluster-agent/football_agent/.adk/
 .DS_Store
 Thumbs.db
 
-# Local outputs/artifacts
+# Local/source-derived data and artifacts. The canonical copies are published
+# per run to GCS; keep generated datasets out of the source repository.
+data/raw/
+output/tables/
+output/derived/
 output/ml/
 *.log
 *.tmp

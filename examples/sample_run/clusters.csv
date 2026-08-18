@@ -1,0 +1,5 @@
+team_name,cluster,cluster_label,cluster_confidence_score
+Barcelona,1,Elite attacking giants,0.867
+Atletico Madrid,3,Defensive elite contenders,0.866
+Valencia,0,Competitive mixed-profile teams,0.900
+Valladolid,2,Outlier underperforming team,0.833

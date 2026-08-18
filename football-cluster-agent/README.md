@@ -8,7 +8,11 @@ It does not modify ingestion, transformations, model training, or upload pipelin
 
 ## Files
 - `agent.py`: ADK agent definition
-- `tools.py`: GCS/BigQuery read tools and helper explainers
+- `tools.py`: GCS/BigQuery adapters and all agent tool entrypoints
+- `analytics.py`: deterministic personalized similarity and Poisson forecast logic
+- `intelligence.py`: dossier, audit, alerts, scouting, scenarios and fan products
+- `agent_search.py`: read-only historical semantic search adapter
+- `business_api/main.py`: FastAPI/OpenAPI surface over the same business functions
 - `requirements.txt`: dependencies
 - `.env.example`: required environment variables
 
@@ -19,6 +23,13 @@ It does not modify ingestion, transformations, model training, or upload pipelin
 - `BQ_DATASET`
 - `CLUSTER_OUTPUT_PREFIX`
 
+Optional feature variables:
+
+- `GOOGLE_GENAI_MODEL` (code default: `gemini-2.5-flash`)
+- `AGENT_SEARCH_DATA_STORE_ID`
+- `AGENT_SEARCH_ENGINE_ID`
+- `AGENT_SEARCH_LOCATION`
+
 ## Setup
 ```bash
 python -m venv .venv
@@ -28,6 +39,15 @@ cp .env.example .env
 ```
 
 Fill `.env` with real values.
+
+PowerShell equivalent:
+
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+py -m pip install -r requirements.txt
+Copy-Item .env.example .env
+```
 
 ## Run locally (ADK Web)
 ```bash
@@ -103,8 +123,18 @@ Interactive OpenAPI documentation is at `/docs`.
 
 ## Cloud Run deployment
 
-Live service (revision `football-agent-00009-zz7`):
+Stable service URL:
 `https://football-agent-hzdooca3ia-uc.a.run.app/dev-ui/`
+
+The current Cloud Run revision is `football-agent-00013-nx4`.
+Cost-safe serving configuration currently uses `minInstanceCount=1`,
+`maxInstanceCount=5`, `cpuIdle=true`, 512 MiB memory and 1 vCPU. The minimum
+instance is intentionally kept warm because the ADK Web UI can return transient
+429 responses during cold-start/recovery; reduce to scale-to-zero only after
+verifying the UI remains reliable.
+
+After a billing reactivation, Cloud Run may return `429 no available instance`
+for up to approximately 30 minutes while serving capacity recovers.
 
 1. Build container image.
 2. Deploy Cloud Run service with `football-agent-sa`.

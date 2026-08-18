@@ -56,8 +56,7 @@ paths remain as temporary backward-compatible copies:
 - `output/ml/metrics/metrics.json`
 - `output/ml/metrics/best_model_summary.json`
 - `output/ml/metrics/cluster_interpretation.json`
-- `output/ml/plots/pca_scatter.png`
-- `output/ml/plots/cluster_sizes.png`
+- `output/ml/plots/*.png` (optional; generated only when visualization dependencies succeed)
 - `output/ml/search/agent_search_documents.jsonl`
 
 `output/ml/latest_run.json` advances only after required artifacts validate and
@@ -75,8 +74,12 @@ py -m ml.clustering.team_clustering_pipeline --config ml/configs/team_clustering
 3. Transform
 4. Derive
 5. **ML clustering**
-6. Upload processed outputs (includes `output/ml/*`)
+6. Upload tables/derived plus the completed immutable ML run; then advance remote `latest_run.json`
 7. Load to BigQuery
+
+The current checked run `20260817T115844Z` completed without versioned plots
+because `matplotlib` was unavailable in that environment. Always inspect the
+run manifest before attributing a flat-path plot to the latest run.
 
 ## Configuration Notes
 Main config file:

@@ -1,0 +1,17 @@
+{
+  "run_id": "20260817T115844Z",
+  "status": "SUCCEEDED",
+  "algorithm": "AgglomerativeClustering",
+  "candidate_id": "AgglomerativeClustering#2",
+  "params": {
+    "n_clusters": 4,
+    "linkage": "ward"
+  },
+  "metrics": {
+    "silhouette": 0.4480,
+    "davies_bouldin": 0.4632,
+    "calinski_harabasz": 16.3186,
+    "composite": 0.5186
+  },
+  "note": "Small public example; see the immutable GCS run for complete metrics."
+}

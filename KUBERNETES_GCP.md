@@ -1,5 +1,9 @@
 # Kubernetes minimal pe Google Cloud
 
+Stare verificata fata de repo la `2026-08-10`: manifestele si scriptul de deploy
+exista, dar repo-ul nu dovedeste existenta unui cluster GKE activ. Acesta este un
+baseline de laborator, nu o confirmare de productie.
+
 ## Arhitectură
 
 - `Deployment/football-agent`: interfața conversațională ADK + Gemini.
@@ -31,6 +35,12 @@ kubectl create secret generic football-api-secrets `
   --namespace football-analytics `
   --from-literal=API_FOOTBALL_KEY=$env:API_FOOTBALL_KEY
 ```
+
+Inainte de deploy-ul agentului, completeaza ConfigMap-ul/overlay-ul mediului cu
+setarile cerute de ADK pentru Vertex AI, inclusiv
+`GOOGLE_GENAI_USE_VERTEXAI=true`, `GOOGLE_CLOUD_LOCATION` si modelul Gemini
+ales. Fisierul `k8s/configmap.yaml` curent contine proiectul, `GCP_LOCATION` si
+sursele de date, dar nu toate aceste optiuni explicite din `.env.example`.
 
 ## Build și deploy
 
